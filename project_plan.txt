@@ -1,0 +1,11 @@
+MIPS single cycle, fully tested
+
+python assembler 
+	- subset of instruction, turn assembly into machinecode 
+
+pipelining 
+	- stall logic 
+	- feedforward 
+	- pipeline registers 
+
+
