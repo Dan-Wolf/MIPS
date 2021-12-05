@@ -11,11 +11,11 @@ Description:    This module is a 32bit ALU. Performs arithmetic on operands base
 module ALU  (   input   logic   [31:0]  A, B,       // Operands
                 input   logic   [3:0]   opCode,     // ALU Op COde
                 output  logic   [31:0]  ALU_Out,    // Output
-                output  logic   [2:0]   zero        // Zero Flag
+                output  logic           zero        // Zero Flag
         );
 
 always_comb begin 
-    case (ALUctl)
+    case (opCode)
         4'b0000 :   ALU_Out <=   A & B;
         4'b0001 :   ALU_Out <=   A | B;
         4'b0010 :   ALU_Out <=   A + B;
@@ -26,7 +26,7 @@ always_comb begin
     endcase
 end
 
-assign Zero = (ALU_Out == 0);   // Set if ALU_Out = 0
+assign zero = (ALU_Out == 0);   // Set if ALU_Out = 0
 
 
 endmodule
