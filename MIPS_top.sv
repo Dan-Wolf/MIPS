@@ -13,43 +13,109 @@ module MIPS (   input   wire    clk,
         );
 
     // Program Counter
-    logic   [31:0]  PC;
+    logic   [31:0]  PC, PC_next, PC_4, PC_branch;
 
+    always @(posedge clk or negedge resetN) begin 
+        if (~resetN) 
+            PC <= 32'b0;
+        else 
+            PC <= PC_next;
+    end 
+
+    
     // Instruction Memory
     logic   [31:0]  instruction;
 
-    instruction_mem inst_mem(.PC            (PC),
-                             .resetN        (resetN),
-                             .instruction   (instruction)
+    instruction_mem inst_mem(
+        .PC            (PC),
+        .resetN        (resetN),
+        .instruction   (instruction)
     );
 
     // Control 
     logic       RegDst, Branch, MemRead, MemtoReg, MemWrite, ALUSrc, RegWrite;
     logic [1:0] ALUOp;
 
-    control control_0(.opCode       (instruction[31:26]),
-                      .resetN       (resetN),
-                      .RegDst       (RegDst),
-                      .Branch       (Branch),
-                      .MemRead      (MemRead),
-                      .MemtoReg     (MemtoReg),
-                      .MemWrite     (MemWrite),
-                      .ALUSrc       (ALUSrc),
-                      .RegWrite     (RegWrite),
-                      .ALUOp        (ALUOp)
+    control control_0(
+        .opCode       (instruction[31:26]),
+        .resetN       (resetN),
+        .RegDst       (RegDst),
+        .Branch       (Branch),
+        .MemRead      (MemRead),
+        .MemtoReg     (MemtoReg),
+        .MemWrite     (MemWrite),
+        .ALUSrc       (ALUSrc),
+        .RegWrite     (RegWrite),
+        .ALUOp        (ALUOp)
     );
 
     // Registers
-    logic   [31:0]  regData1, regData2, wrData;
+    logic   [31:0]  regData1, regData2, wrData, regWriteData;
+    logic   [4:0]   wrReg;
 
-    // Add wrReg MUX
+    assign wrReg = RegDst ? instruction[15:11] : instruction[20:16];
 
-    register_mem(.regWrite  (RegWrite),
-                 .resetN    (resetN),
-                 .rdReg1    (instruction[25:21]),
-                 .rdReg2    (instruction[20:16]),
-                 .wr
-                 )
+    register_mem regMem(
+        .regWrite  (RegWrite),
+        .resetN    (resetN),
+        .rdReg1    (instruction[25:21]),
+        .rdReg2    (instruction[20:16]),
+        .wrReg     (wrReg),
+        .wrData    (regWriteData),
+        .data1     (regData1),
+        .data2     (regData2)
+    );
+
+    // Sign Extend Immediate Field
+    logic   [31:0] imdtVal;
+    assign imdtVal = {{16{instruction[15]}}, instruction[15:0]};
+
+    // ALU Control 
+    logic   [3:0]   ALUCtl;
+
+    ALUControl ALUCtrl(
+        .ALUOp   (ALUOp),
+        .funct   (instruction[5:0]),
+        .ALUCtl  (ALUCtl)
+    );
+
+    // ALU
+    logic           zero;
+    logic   [31:0]  operand_B, ALU_Out;
+    assign operand_B = ALUSrc ? imdtVal : regData2;
+
+    ALU alu(
+        .A      (regData1),
+        .B      (operand_B),
+        .opCode (ALUCtl),
+        .ALU_Out(ALU_Out),
+        .zero   (zero)
+    );
+
+    // Data Memory
+    logic [31:0] dMem_data;
+
+    dataMemory dMem(
+        .clk        (clk),
+        .resetN     (resetN),
+        .address    (ALU_Out),
+        .wrData     (regData2),
+        .MemWrite   (MemWrite),
+        .MemRead    (MemRead),
+        .readData   (dMem_data)
+    );
+
+    assign regWriteData = MemtoReg ? dMem_data : ALU_Out;
+
+    // PC_next Logic
+    assign PC_4 = PC + 32'h0000_0004;   // Increment PC Counter 
+    assign PC_branch = {imdtVal[28:0], 2'b00} + PC_4;
+
+    logic b_and_z;
+    assign b_and_z = Branch & zero;
+
+    assign PC_next = b_and_z ? PC_branch : PC_4;
+
 
 endmodule 
 

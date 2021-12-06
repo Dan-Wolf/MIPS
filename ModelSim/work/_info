@@ -11,24 +11,24 @@ cModel Technology
 dC:/intelFPGA_lite/20.1
 vALU
 Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z1 !s110 1638745652
+Z1 !s110 1638763148
 !i10b 1
 !s100 170B4T^zi_0<YF=:LX]hW3
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
 IoAe:?UV=>IndSImTa@TAc2
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 S1
-Z4 dC:/Users/danwo/Documents/School/Senior_Project/repo/ModelSim
-Z5 w1638742979
+Z4 dC:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/ModelSim
+Z5 w1638746798
 8C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/ALU.sv
 FC:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/ALU.sv
-!i122 84
+!i122 104
 L0 11 22
 Z6 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z7 !s108 1638745652.000000
+Z7 !s108 1638763148.000000
 !s107 C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/ALU.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/ALU.sv|
 !i113 1
@@ -45,10 +45,10 @@ IBLC55Ee[6AaGLfGFcSSiO0
 R3
 S1
 R4
-w1637202951
+R5
 8C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/ALUControl.sv
 FC:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/ALUControl.sv
-!i122 85
+!i122 105
 L0 11 23
 R6
 r1
@@ -63,7 +63,7 @@ R9
 n@a@l@u@control
 vcontrol
 R0
-R1
+Z10 !s110 1638763149
 !i10b 1
 !s100 ;]M0DUzLT4zEA^XmW:F[M0
 R2
@@ -71,10 +71,10 @@ I9z@]_LYAE2lFC7:1ihLLQ2
 R3
 S1
 R4
-w1638742977
+Z11 w1638746796
 8C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/control.sv
 FC:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/control.sv
-!i122 90
+!i122 110
 L0 9 86
 R6
 r1
@@ -86,31 +86,83 @@ R7
 !i113 1
 R8
 R9
+vdataMemory
+R0
+R10
+!i10b 1
+!s100 8CDJOWVPDRn^DK6?>4VTO1
+R2
+I4_SYWMU0VBM<LYX;GWi9=3
+R3
+S1
+R4
+w1638762663
+8C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/dataMemory.sv
+FC:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/dataMemory.sv
+!i122 114
+Z12 L0 8 25
+R6
+r1
+!s85 0
+31
+Z13 !s108 1638763149.000000
+!s107 C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/dataMemory.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/dataMemory.sv|
+!i113 1
+R8
+R9
+ndata@memory
 vinstruction_mem
 R0
 R1
 !i10b 1
 !s100 44e_TC7mlH^d@OQU`?oi:1
 R2
-IfhG`^@n2=1X=XXUaW9Bh_0
+Il?=@Sk1hS?9BNmQ9OzG8;2
 R3
 S1
 R4
-w1638744738
-8C:\Users\danwo\Documents\School\Senior_Project\repo\MIPS\instructions.sv
-FC:\Users\danwo\Documents\School\Senior_Project\repo\MIPS\instructions.sv
-!i122 86
+w1638746797
+8C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/instructions.sv
+FC:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/instructions.sv
+!i122 106
 L0 11 29
 R6
 r1
 !s85 0
 31
 R7
-!s107 C:\Users\danwo\Documents\School\Senior_Project\repo\MIPS\instructions.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:\Users\danwo\Documents\School\Senior_Project\repo\MIPS\instructions.sv|
+!s107 C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/instructions.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/instructions.sv|
 !i113 1
 R8
 R9
+vMIPS
+R0
+!s110 1638763724
+!i10b 1
+!s100 <hFH9Dg7jEU4N3]9hbU7i2
+R2
+IDU;VjVVR2NgNjhBIQoFZo1
+R3
+S1
+R4
+w1638763715
+8C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/MIPS_top.sv
+FC:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/MIPS_top.sv
+!i122 118
+L0 11 110
+R6
+r1
+!s85 0
+31
+!s108 1638763724.000000
+!s107 C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/MIPS_top.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/MIPS_top.sv|
+!i113 1
+R8
+R9
+n@m@i@p@s
 vregister_mem
 R0
 R1
@@ -121,10 +173,10 @@ I3K7bniVha2WFkX2TXHOcE1
 R3
 S1
 R4
-w1638745438
+R11
 8C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/registers.sv
 FC:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/registers.sv
-!i122 87
+!i122 107
 L0 11 35
 R6
 r1
@@ -149,7 +201,7 @@ R4
 w1638742776
 8C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/tb_ALUControl.sv
 FC:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/tb_ALUControl.sv
-!i122 89
+!i122 109
 L0 8 24
 R6
 r1
@@ -164,7 +216,7 @@ R9
 ntb_@a@l@u@control
 vtb_control
 R0
-R1
+R10
 !i10b 1
 !s100 7VMhnJMa?[IE5eTcic:Y:3
 R2
@@ -175,13 +227,13 @@ R4
 w1638742777
 8C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/tb_control.sv
 FC:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/tb_control.sv
-!i122 91
+!i122 111
 L0 8 23
 R6
 r1
 !s85 0
 31
-R7
+R13
 !s107 C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/tb_control.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/tb_control.sv|
 !i113 1
@@ -189,7 +241,7 @@ R8
 R9
 vtb_instructions
 R0
-R1
+R10
 !i10b 1
 !s100 HLN>gmBIOJjbYzU_d4QS90
 R2
@@ -197,21 +249,47 @@ ImVeZc`4^EZ<2FQ<AfS0AZ2
 R3
 S1
 R4
-w1638744652
+w1638746786
 8C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/tb_instructions.sv
 FC:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/tb_instructions.sv
-!i122 92
+!i122 112
 L0 8 20
 R6
 r1
 !s85 0
 31
-R7
+R13
 !s107 C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/tb_instructions.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/tb_instructions.sv|
 !i113 1
 R8
 R9
+vtb_MIPS
+R0
+!s110 1638763462
+!i10b 1
+!s100 Ic@koi_JiNJoB4C1MzRzg2
+R2
+IUjhHejel_hX<kb820QcRg2
+R3
+S1
+R4
+w1638763458
+8C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/tb_MIPS.sv
+FC:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/tb_MIPS.sv
+!i122 117
+L0 8 19
+R6
+r1
+!s85 0
+31
+!s108 1638763462.000000
+!s107 C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/tb_MIPS.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/tb_MIPS.sv|
+!i113 1
+R8
+R9
+ntb_@m@i@p@s
 vtb_MIPSALU
 R0
 R1
@@ -222,10 +300,10 @@ IE;Gd;XcXM244DSCg8nKW=0
 R3
 S1
 R4
-R5
+w1638746795
 8C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/tb_ALU.sv
 FC:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/tb_ALU.sv
-!i122 88
+!i122 108
 L0 8 22
 R6
 r1
@@ -240,7 +318,7 @@ R9
 ntb_@m@i@p@s@a@l@u
 vtb_registers
 R0
-R1
+R10
 !i10b 1
 !s100 Z2b:g[48YU>FVBiM7Y0YU3
 R2
@@ -251,13 +329,13 @@ R4
 w1638745633
 8C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/tb_registers.sv
 FC:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/tb_registers.sv
-!i122 93
-L0 8 25
+!i122 113
+R12
 R6
 r1
 !s85 0
 31
-R7
+R13
 !s107 C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/tb_registers.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/tb_registers.sv|
 !i113 1

@@ -1,338 +1,132 @@
-# Compile of ALU.sv failed with 1 errors.
-# Compile of ALUControl.sv was successful.
-# Compile of instructions.sv failed with 1 errors.
-# Compile of MIPS_top.sv failed with 1 errors.
-# Compile of registers.sv failed with 2 errors.
-# Compile of tb_ALU.sv failed with 1 errors.
-# 6 compiles, 5 failed with 6 errors.
-# Compile of ALU.sv failed with 1 errors.
-# Compile of ALUControl.sv was successful.
-# Compile of instructions.sv failed with 1 errors.
-# Compile of MIPS_top.sv failed with 1 errors.
-# Compile of registers.sv was successful.
-# Compile of tb_ALU.sv failed with 1 errors.
-# 6 compiles, 4 failed with 4 errors.
-# Compile of ALU.sv was successful.
-# Compile of ALUControl.sv was successful.
-# Compile of instructions.sv failed with 1 errors.
-# Compile of MIPS_top.sv failed with 1 errors.
-# Compile of registers.sv was successful.
-# Compile of tb_ALU.sv was successful with warnings.
-# 6 compiles, 2 failed with 2 errors.
-# Compile of ALU.sv was successful.
-# Compile of ALUControl.sv was successful.
-# Compile of instructions.sv failed with 1 errors.
-# Compile of MIPS_top.sv failed with 1 errors.
-# Compile of registers.sv was successful.
-# Compile of tb_ALU.sv was successful.
-# 6 compiles, 2 failed with 2 errors.
-vsim -gui work.tb_MIPSALU
-# vsim -gui work.tb_MIPSALU 
-# Start time: 15:52:28 on Dec 05,2021
-# Loading sv_std.std
-# Loading work.tb_MIPSALU
-# Loading work.ALU
-# ** Error: (vsim-3694) The implicit port connection (.*) did not find a matching port, net, variable or interface instance in tb_MIPSALU for port 'opCode'.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_MIPSALU/DUT File: C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/ALU.sv
-# ** Error: (vsim-3694) The implicit port connection (.*) did not find a matching port, net, variable or interface instance in tb_MIPSALU for port 'ALU_Out'.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_MIPSALU/DUT File: C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/ALU.sv
-# ** Error: (vsim-3694) The implicit port connection (.*) did not find a matching port, net, variable or interface instance in tb_MIPSALU for port 'zero'.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_MIPSALU/DUT File: C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/ALU.sv
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 5, found 2.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_MIPSALU/DUT File: C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/tb_ALU.sv Line: 18
-# ** Warning: (vsim-3722) C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/tb_ALU.sv(18): [TFMPC] - Missing connection for port 'opCode'.
-# ** Warning: (vsim-3722) C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/tb_ALU.sv(18): [TFMPC] - Missing connection for port 'ALU_Out'.
-# ** Warning: (vsim-3722) C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/tb_ALU.sv(18): [TFMPC] - Missing connection for port 'zero'.
-# Error loading design
-# End time: 15:52:28 on Dec 05,2021, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 12
-# Compile of ALU.sv was successful.
-# Compile of ALUControl.sv was successful.
-# Compile of instructions.sv failed with 1 errors.
-# Compile of MIPS_top.sv failed with 1 errors.
-# Compile of registers.sv was successful.
-# Compile of tb_ALU.sv failed with 1 errors.
-# 6 compiles, 3 failed with 3 errors.
-# Compile of ALU.sv was successful.
-# Compile of ALUControl.sv was successful.
-# Compile of instructions.sv failed with 1 errors.
-# Compile of MIPS_top.sv failed with 1 errors.
-# Compile of registers.sv was successful.
-# Compile of tb_ALU.sv was successful.
-# 6 compiles, 2 failed with 2 errors.
-vsim -gui work.tb_MIPSALU
-# vsim -gui work.tb_MIPSALU 
-# Start time: 15:53:27 on Dec 05,2021
-# Loading sv_std.std
-# Loading work.tb_MIPSALU
-# Loading work.ALU
-# ** Error: (vsim-3694) The implicit port connection (.*) did not find a matching port, net, variable or interface instance in tb_MIPSALU for port 'ALU_Out'.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_MIPSALU/DUT File: C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/ALU.sv
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 5, found 4.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_MIPSALU/DUT File: C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/tb_ALU.sv Line: 18
-# ** Error: (vsim-8378) Port size (3) does not match connection size (1) for implicit .name connection port 'zero'. The port definition is at: C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/ALU.sv(14).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_MIPSALU/DUT File: C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/tb_ALU.sv Line: 18
-# ** Warning: (vsim-3722) C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/tb_ALU.sv(18): [TFMPC] - Missing connection for port 'ALU_Out'.
-# Error loading design
-# End time: 15:53:27 on Dec 05,2021, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 5
-# Compile of tb_ALU.sv was successful.
-vsim -gui work.tb_MIPSALU
-# vsim -gui work.tb_MIPSALU 
-# Start time: 15:54:09 on Dec 05,2021
-# Loading sv_std.std
-# Loading work.tb_MIPSALU
-# Loading work.ALU
-# ** Error: (vsim-3694) The implicit port connection (.*) did not find a matching port, net, variable or interface instance in tb_MIPSALU for port 'ALU_Out'.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_MIPSALU/DUT File: C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/ALU.sv
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 5, found 4.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_MIPSALU/DUT File: C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/tb_ALU.sv Line: 18
-# ** Error: (vsim-8378) Port size (3) does not match connection size (1) for implicit .name connection port 'zero'. The port definition is at: C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/ALU.sv(14).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_MIPSALU/DUT File: C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/tb_ALU.sv Line: 18
-# ** Warning: (vsim-3722) C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/tb_ALU.sv(18): [TFMPC] - Missing connection for port 'ALU_Out'.
-# Error loading design
-# End time: 15:54:10 on Dec 05,2021, Elapsed time: 0:00:01
-# Errors: 2, Warnings: 4
-# Compile of tb_ALU.sv was successful.
-vsim -gui work.tb_MIPSALU
-# vsim -gui work.tb_MIPSALU 
-# Start time: 15:54:38 on Dec 05,2021
-# Loading sv_std.std
-# Loading work.tb_MIPSALU
-# Loading work.ALU
-# ** Error: (vsim-8378) Port size (3) does not match connection size (1) for implicit .name connection port 'zero'. The port definition is at: C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/ALU.sv(14).
-#    Time: 0 ns  Iteration: 0  Instance: /tb_MIPSALU/DUT File: C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/tb_ALU.sv Line: 18
-# Error loading design
-# End time: 15:54:39 on Dec 05,2021, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 2
-# Compile of ALU.sv was successful.
-vsim -gui work.tb_MIPSALU
-# vsim -gui work.tb_MIPSALU 
-# Start time: 15:55:03 on Dec 05,2021
-# Loading sv_std.std
-# Loading work.tb_MIPSALU
-# Loading work.ALU
-add wave -position insertpoint  \
-sim:/tb_MIPSALU/A \
-sim:/tb_MIPSALU/ALU_Out \
-sim:/tb_MIPSALU/B \
-sim:/tb_MIPSALU/opCode \
-sim:/tb_MIPSALU/zero
-run
-run
-quit -sim
-# End time: 15:58:12 on Dec 05,2021, Elapsed time: 0:03:09
-# Errors: 0, Warnings: 2
-# Compile of ALU.sv was successful.
-vsim -gui work.tb_MIPSALU
-# vsim -gui work.tb_MIPSALU 
-# Start time: 15:58:24 on Dec 05,2021
-# Loading sv_std.std
-# Loading work.tb_MIPSALU
-# Loading work.ALU
-add wave -position insertpoint  \
-sim:/tb_MIPSALU/A \
-sim:/tb_MIPSALU/ALU_Out \
-sim:/tb_MIPSALU/B \
-sim:/tb_MIPSALU/opCode \
-sim:/tb_MIPSALU/zero
-run
-quit -sim
-# End time: 16:06:42 on Dec 05,2021, Elapsed time: 0:08:18
-# Errors: 0, Warnings: 2
-# Compile of instructions.sv failed with 1 errors.
-# Compile of ALU.sv was successful.
-# Compile of ALUControl.sv was successful.
-# Compile of instructions.sv failed with 1 errors.
-# Compile of MIPS_top.sv failed with 1 errors.
-# Compile of registers.sv was successful.
-# Compile of tb_ALU.sv was successful.
-# Compile of tb_ALUControl.sv failed with 1 errors.
-# 7 compiles, 3 failed with 3 errors.
 # Compile of ALU.sv was successful.
 # Compile of ALUControl.sv was successful.
 # Compile of instructions.sv was successful.
-# Compile of MIPS_top.sv failed with 1 errors.
-# Compile of registers.sv was successful.
-# Compile of tb_ALU.sv was successful.
-# Compile of tb_ALUControl.sv was successful.
-# 7 compiles, 1 failed with 1 error.
-vsim -gui work.tb_ALUControl
-# vsim -gui work.tb_ALUControl 
-# Start time: 16:16:54 on Dec 05,2021
-# Loading sv_std.std
-# Loading work.tb_ALUControl
-# Loading work.ALUControl
-add wave -position insertpoint  \
-sim:/tb_ALUControl/ALUCtl \
-sim:/tb_ALUControl/ALUOp \
-sim:/tb_ALUControl/funct
-# Can't move the Now cursor.
-run
-run
-quit -sim
-# End time: 17:11:00 on Dec 05,2021, Elapsed time: 0:54:06
-# Errors: 0, Warnings: 5
-# Compile of ALU.sv was successful.
-# Compile of ALUControl.sv was successful.
-# Compile of instructions.sv was successful.
-# Compile of MIPS_top.sv failed with 1 errors.
-# Compile of registers.sv was successful.
-# Compile of tb_ALU.sv was successful.
-# Compile of tb_ALUControl.sv was successful.
-# Compile of control.sv failed with 1 errors.
-# Compile of tb_control.sv failed with 1 errors.
-# 9 compiles, 3 failed with 3 errors.
-# Compile of ALU.sv was successful.
-# Compile of ALUControl.sv was successful.
-# Compile of instructions.sv was successful.
-# Compile of MIPS_top.sv failed with 1 errors.
-# Compile of registers.sv was successful.
-# Compile of tb_ALU.sv was successful.
-# Compile of tb_ALUControl.sv was successful.
-# Compile of control.sv failed with 4 errors.
-# Compile of tb_control.sv failed with 1 errors.
-# 9 compiles, 3 failed with 6 errors.
-# Error opening C:/Users/danwo/Documents/School/Senior_Project/repo/ModelSim/(vlog-13069) C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/control.sv
-# Path name 'C:/Users/danwo/Documents/School/Senior_Project/repo/ModelSim/(vlog-13069) C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/control.sv' doesn't exist.
-# Compile of control.sv failed with 1 errors.
-# Compile of control.sv was successful.
-# Compile of tb_control.sv failed with 1 errors.
-# Compile of ALU.sv was successful.
-# Compile of ALUControl.sv was successful.
-# Compile of instructions.sv was successful.
-# Compile of MIPS_top.sv failed with 1 errors.
+# Compile of MIPS_top.sv failed with 7 errors.
 # Compile of registers.sv was successful.
 # Compile of tb_ALU.sv was successful.
 # Compile of tb_ALUControl.sv was successful.
 # Compile of control.sv was successful.
 # Compile of tb_control.sv was successful.
-# 9 compiles, 1 failed with 1 error.
-vsim -gui work.tb_control
-# vsim -gui work.tb_control 
-# Start time: 17:13:40 on Dec 05,2021
+# Compile of tb_instructions.sv was successful.
+# Compile of tb_registers.sv was successful.
+# 11 compiles, 1 failed with 7 errors.
+# Compile of ALU.sv was successful.
+# Compile of ALUControl.sv was successful.
+# Compile of instructions.sv was successful.
+# Compile of MIPS_top.sv failed with 7 errors.
+# Compile of registers.sv was successful.
+# Compile of tb_ALU.sv was successful.
+# Compile of tb_ALUControl.sv was successful.
+# Compile of control.sv was successful.
+# Compile of tb_control.sv was successful.
+# Compile of tb_instructions.sv was successful.
+# Compile of tb_registers.sv was successful.
+# Compile of dataMemory.sv was successful.
+# 12 compiles, 1 failed with 7 errors.
+# Compile of MIPS_top.sv failed with 1 errors.
+# Compile of MIPS_top.sv was successful.
+# Compile of tb_MIPS.sv was successful.
+vsim -gui work.tb_MIPS
+# vsim -gui work.tb_MIPS 
+# Start time: 23:03:53 on Dec 05,2021
 # Loading sv_std.std
-# Loading work.tb_control
+# Loading work.tb_MIPS
+# ** Error: (vsim-3033) Instantiation of 'MIPS_top' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_MIPS File: C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/tb_MIPS.sv Line: 18
+#         Searched libraries:
+#             C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/ModelSim/work
+# Error loading design
+# End time: 23:03:54 on Dec 05,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 8
+# Compile of tb_MIPS.sv was successful.
+vsim -gui work.tb_MIPS
+# vsim -gui work.tb_MIPS 
+# Start time: 23:04:31 on Dec 05,2021
+# Loading sv_std.std
+# Loading work.tb_MIPS
+# Loading work.MIPS
+# Loading work.instruction_mem
 # Loading work.control
-add wave -position insertpoint  \
-sim:/tb_control/ALUOp \
-sim:/tb_control/ALUSrc \
-sim:/tb_control/Branch \
-sim:/tb_control/MemRead \
-sim:/tb_control/MemtoReg \
-sim:/tb_control/MemWrite \
-sim:/tb_control/opCode \
-sim:/tb_control/RegDst \
-sim:/tb_control/RegWrite \
-sim:/tb_control/resetN
-run
-quit -sim
-# End time: 17:34:43 on Dec 05,2021, Elapsed time: 0:21:03
-# Errors: 0, Warnings: 8
-# Compile of ALU.sv was successful.
-# Compile of ALUControl.sv was successful.
-# Compile of instructions.sv was successful.
-# Compile of MIPS_top.sv failed with 1 errors.
-# Compile of registers.sv was successful.
-# Compile of tb_ALU.sv was successful.
-# Compile of tb_ALUControl.sv was successful.
-# Compile of control.sv was successful.
-# Compile of tb_control.sv was successful.
-# 9 compiles, 1 failed with 1 error.
-# Compile of ALU.sv was successful.
-# Compile of ALUControl.sv was successful.
-# Compile of instructions.sv failed with 3 errors.
-# Compile of MIPS_top.sv failed with 1 errors.
-# Compile of registers.sv was successful.
-# Compile of tb_ALU.sv was successful.
-# Compile of tb_ALUControl.sv was successful.
-# Compile of control.sv was successful.
-# Compile of tb_control.sv was successful.
-# 9 compiles, 2 failed with 4 errors.
-# Compile of instructions.sv failed with 2 errors.
-# Compile of instructions.sv failed with 1 errors.
-# Compile of instructions.sv was successful.
-# Compile of tb_instructions.sv was successful.
-vsim -gui work.tb_instructions
-# vsim -gui work.tb_instructions 
-# Start time: 17:47:57 on Dec 05,2021
-# Loading sv_std.std
-# Loading work.tb_instructions
-# Loading work.instruction_mem
-# ** Error: (vsim-3694) The implicit port connection (.*) did not find a matching port, net, variable or interface instance in tb_instructions for port 'instuction'.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_instructions/DUT File: C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/instructions.sv
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'DUT'.  Expected 3, found 2.
-#    Time: 0 ns  Iteration: 0  Instance: /tb_instructions/DUT File: C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/tb_instructions.sv Line: 18
-# ** Warning: (vsim-3722) C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/tb_instructions.sv(18): [TFMPC] - Missing connection for port 'instuction'.
-# Error loading design
-# End time: 17:47:57 on Dec 05,2021, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 10
-# Compile of tb_instructions.sv failed with 1 errors.
-# Compile of tb_instructions.sv failed with 1 errors.
-# Compile of tb_instructions.sv failed with 1 errors.
-# Compile of tb_instructions.sv was successful.
-# Compile of instructions.sv was successful.
-# Compile of ALU.sv was successful.
-# Compile of ALUControl.sv was successful.
-# Compile of instructions.sv was successful.
-# Compile of MIPS_top.sv failed with 1 errors.
-# Compile of registers.sv was successful.
-# Compile of tb_ALU.sv was successful.
-# Compile of tb_ALUControl.sv was successful.
-# Compile of control.sv was successful.
-# Compile of tb_control.sv was successful.
-# Compile of tb_instructions.sv was successful.
-# 10 compiles, 1 failed with 1 error.
-vsim -gui work.tb_instructions
-# vsim -gui work.tb_instructions 
-# Start time: 17:51:13 on Dec 05,2021
-# Loading sv_std.std
-# Loading work.tb_instructions
-# Loading work.instruction_mem
-add wave -position insertpoint  \
-sim:/tb_instructions/instruction \
-sim:/tb_instructions/PC \
-sim:/tb_instructions/resetN
-# Can't move the Now cursor.
-run
-quit -sim
-# End time: 18:04:07 on Dec 05,2021, Elapsed time: 0:12:54
-# Errors: 0, Warnings: 7
-# Compile of registers.sv was successful.
-# Compile of instructions.sv was successful.
-# Compile of tb_registers.sv was successful.
-vsim -gui work.tb_registers
-# vsim -gui work.tb_registers 
-# Start time: 18:04:38 on Dec 05,2021
-# Loading sv_std.std
-# Loading work.tb_registers
 # Loading work.register_mem
+# Loading work.ALUControl
+# Loading work.ALU
+# Loading work.dataMemory
 add wave -position insertpoint  \
-sim:/tb_registers/data1 \
-sim:/tb_registers/data2 \
-sim:/tb_registers/rdReg1 \
-sim:/tb_registers/rdReg2 \
-sim:/tb_registers/regWrite \
-sim:/tb_registers/resetN \
-sim:/tb_registers/wrData \
-sim:/tb_registers/wrReg
+sim:/tb_MIPS/DUT/ALU_Out \
+sim:/tb_MIPS/DUT/ALUCtl \
+sim:/tb_MIPS/DUT/ALUOp \
+sim:/tb_MIPS/DUT/ALUSrc \
+sim:/tb_MIPS/DUT/b_and_z \
+sim:/tb_MIPS/DUT/Branch \
+sim:/tb_MIPS/DUT/clk \
+sim:/tb_MIPS/DUT/dMem_data \
+sim:/tb_MIPS/DUT/imdtVal \
+sim:/tb_MIPS/DUT/instruction \
+sim:/tb_MIPS/DUT/MemRead \
+sim:/tb_MIPS/DUT/MemtoReg \
+sim:/tb_MIPS/DUT/MemWrite \
+sim:/tb_MIPS/DUT/operand_B \
+sim:/tb_MIPS/DUT/PC \
+sim:/tb_MIPS/DUT/PC_4 \
+sim:/tb_MIPS/DUT/PC_branch \
+sim:/tb_MIPS/DUT/PC_next \
+sim:/tb_MIPS/DUT/regData1 \
+sim:/tb_MIPS/DUT/regData2 \
+sim:/tb_MIPS/DUT/RegDst \
+sim:/tb_MIPS/DUT/RegWrite \
+sim:/tb_MIPS/DUT/regWriteData \
+sim:/tb_MIPS/DUT/resetN \
+sim:/tb_MIPS/DUT/wrData \
+sim:/tb_MIPS/DUT/wrReg \
+sim:/tb_MIPS/DUT/zero
 run
-# Compile of ALU.sv was successful.
-# Compile of ALUControl.sv was successful.
-# Compile of instructions.sv was successful.
-# Compile of MIPS_top.sv failed with 1 errors.
-# Compile of registers.sv was successful.
-# Compile of tb_ALU.sv was successful.
-# Compile of tb_ALUControl.sv was successful.
-# Compile of control.sv was successful.
-# Compile of tb_control.sv was successful.
-# Compile of tb_instructions.sv was successful.
-# Compile of tb_registers.sv was successful.
-# 11 compiles, 1 failed with 1 error.
-restart
+# Break key hit
+# Break in Module MIPS at C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/MIPS_top.sv line 108
+# Load canceled
+add wave -position insertpoint  \
+sim:/tb_MIPS/DUT/ALU_Out \
+sim:/tb_MIPS/DUT/ALUCtl \
+sim:/tb_MIPS/DUT/ALUOp \
+sim:/tb_MIPS/DUT/ALUSrc \
+sim:/tb_MIPS/DUT/b_and_z \
+sim:/tb_MIPS/DUT/Branch \
+sim:/tb_MIPS/DUT/clk \
+sim:/tb_MIPS/DUT/dMem_data \
+sim:/tb_MIPS/DUT/imdtVal \
+sim:/tb_MIPS/DUT/instruction \
+sim:/tb_MIPS/DUT/MemRead \
+sim:/tb_MIPS/DUT/MemtoReg \
+sim:/tb_MIPS/DUT/MemWrite \
+sim:/tb_MIPS/DUT/operand_B \
+sim:/tb_MIPS/DUT/PC \
+sim:/tb_MIPS/DUT/PC_4 \
+sim:/tb_MIPS/DUT/PC_branch \
+sim:/tb_MIPS/DUT/PC_next \
+sim:/tb_MIPS/DUT/regData1 \
+sim:/tb_MIPS/DUT/regData2 \
+sim:/tb_MIPS/DUT/RegDst \
+sim:/tb_MIPS/DUT/RegWrite \
+sim:/tb_MIPS/DUT/regWriteData \
+sim:/tb_MIPS/DUT/resetN \
+sim:/tb_MIPS/DUT/wrData \
+sim:/tb_MIPS/DUT/wrReg \
+sim:/tb_MIPS/DUT/zero
+run
+# Break key hit
+# Break in Module MIPS at C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/MIPS_top.sv line 108
+step
+# Break key hit
+# Break in Module MIPS at C:/Users/danwo/Documents/School/Senior_Project/repo/MIPS/MIPS_top.sv line 108
+# Compile of MIPS_top.sv was successful.
+restart -f
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.tb_registers
-# Loading work.register_mem
+# Loading work.MIPS
 run
-# End time: 18:27:06 on Dec 05,2021, Elapsed time: 0:22:28
-# Errors: 0, Warnings: 1
+add wave -position insertpoint  \
+sim:/tb_MIPS/DUT/alu/A \
+sim:/tb_MIPS/DUT/alu/ALU_Out \
+sim:/tb_MIPS/DUT/alu/B \
+sim:/tb_MIPS/DUT/alu/opCode \
+sim:/tb_MIPS/DUT/alu/zero
+restart
+run
