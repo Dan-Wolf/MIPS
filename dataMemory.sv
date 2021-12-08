@@ -2,7 +2,7 @@
 Filename:       dataMemory.sv
 Author:         DTW
 Date:           12/05/2021
-Description:    TData memory storage for read/write operations
+Description:    Data memory storage for read/write operations
 */
 
 module dataMemory ( 

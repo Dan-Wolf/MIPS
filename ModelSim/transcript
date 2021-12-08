@@ -130,3 +130,48 @@ sim:/tb_MIPS/DUT/alu/opCode \
 sim:/tb_MIPS/DUT/alu/zero
 restart
 run
+quit -sim
+# End time: 19:48:02 on Dec 07,2021, Elapsed time: 44:43:31
+# Errors: 0, Warnings: 1
+# Compile of ALU.sv was successful.
+# Compile of ALUControl.sv was successful.
+# Compile of instructions.sv was successful.
+# Compile of MIPS_top.sv was successful.
+# Compile of registers.sv was successful.
+# Compile of tb_ALU.sv was successful.
+# Compile of tb_ALUControl.sv was successful.
+# Compile of control.sv was successful.
+# Compile of tb_control.sv was successful.
+# Compile of tb_instructions.sv was successful.
+# Compile of tb_registers.sv was successful.
+# Compile of dataMemory.sv was successful.
+# Compile of tb_MIPS.sv was successful.
+# Compile of tb_dataMemory.sv was successful.
+# 14 compiles, 0 failed with no errors.
+vsim -gui work.tb_dataMemory
+# vsim -gui work.tb_dataMemory 
+# Start time: 19:48:33 on Dec 07,2021
+# Loading sv_std.std
+# Loading work.tb_dataMemory
+# Loading work.dataMemory
+add wave -position insertpoint  \
+sim:/tb_dataMemory/address \
+sim:/tb_dataMemory/clk \
+sim:/tb_dataMemory/MemRead \
+sim:/tb_dataMemory/MemWrite \
+sim:/tb_dataMemory/readData \
+sim:/tb_dataMemory/resetN \
+sim:/tb_dataMemory/wrData
+run
+# Compile of tb_dataMemory.sv failed with 2 errors.
+# Compile of tb_dataMemory.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_dataMemory
+run
+# Compile of tb_dataMemory.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.tb_dataMemory
+run
+# Compile of tb_dataMemory.sv was successful.
