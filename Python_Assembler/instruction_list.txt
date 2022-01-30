@@ -1,0 +1,27 @@
+instruction list (see pg 64) 
+
+INST	OPCODE	FUNCT
+add	    000000	100000
+sub	    000000 	100010
+and	    000000 	100100
+or  	000000	100101
+nor 	000000	100111
+sll 	000000	000000
+srl	    000000	000010
+slt	    000000	101010
+sltu	000000	101011
+
+
+lw	    100011 
+sw	    101011
+addi	001000
+andi	001100
+ori	    001101
+beq	    000100
+bne	    000101
+slti	001010
+sltiu	001011
+
+
+j	    000010
+jal	    000011
