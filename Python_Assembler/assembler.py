@@ -7,6 +7,8 @@
 #=========================================================================================
 
 # Variable Definitions
+
+def 
 zero = '00000'
 at = '00001'
 v0 = '00010'; v1 = '00011'
@@ -64,7 +66,20 @@ for inst in instructions:
       
     # R Instructions
     if inst[0] == 'add' or inst[0] == 'sub' or inst[0] == 'and'  or inst[0] == 'or' or inst[0] == 'nor' or inst[0] == 'sll' or inst[0] == 'srl' or inst[0] == 'slt' or inst[0] == 'sltu':
-        print('a')
+        print("R Instruction")
+        opcode = zero
+        rd = inst[1]
+        rs = inst[2]
+
+        if inst[0] == 'sll' or inst[0] == 'srl':
+            shamt = inst[3]
+            rt = zero
+        else:
+            rt = inst[3]
+            shamt = zero
+
+        print(opcode + rs + rt + rd + shamt + funct)
+        
 
     
     # I Instructions
