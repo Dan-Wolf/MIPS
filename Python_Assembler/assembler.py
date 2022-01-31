@@ -58,13 +58,13 @@ for inst in instructions:
     # R Instructions
     if inst[0] == 'add' or inst[0] == 'sub' or inst[0] == 'and'  or inst[0] == 'or' or inst[0] == 'nor' or inst[0] == 'sll' or inst[0] == 'srl' or inst[0] == 'slt' or inst[0] == 'sltu':
         print("R Instruction")
-        opcode = hex_code[0]
+        opcode = '000000'
         rd = hex_code[registers.index(inst[1])]
         rs = hex_code[registers.index(inst[2])]
         funct = r_hex_code[r_inst.index(inst[0])]
 
         if inst[0] == 'sll' or inst[0] == 'srl':
-            shamt = hex_code[registers.index(inst[3])]
+            shamt = inst[3]
             rt = hex_code[0]
         else:
             rt = hex_code[registers.index(inst[3])]
@@ -90,10 +90,21 @@ for inst in instructions:
         else:
             rs = hex_code[registers.index(inst[2])]
             immediate = inst[3]
-            
+        
+        file_w.write(opcode + rs + rt + immediate + '\n')
+        mem_count = mem_count + 1
+
+
     # J Instructions    
     elif inst[0] == 'j' or inst[0] == 'jal':
-        print('c')
+        address = inst[1]
+
+        if inst[0] == 'j':
+            opcode = '000010'
+        else:
+            opcode = '000011'
+
+        file_w.write(opcode + address + '\n')
         mem_count = mem_count + 1
     
 

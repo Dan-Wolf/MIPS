@@ -1,4 +1,9 @@
 instruction list (see pg 64) 
+example instruction add s1 t1 t0
+no commas, all lowercase
+immediate instruction type requires full 16b input 
+address requires full 26b input 
+
 
 INST	OPCODE	FUNCT
 add	    000000	100000
