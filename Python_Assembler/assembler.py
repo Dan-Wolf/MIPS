@@ -7,21 +7,12 @@
 #=========================================================================================
 
 # Variable Definitions
-
-def 
-zero = '00000'
-at = '00001'
-v0 = '00010'; v1 = '00011'
-a0 = '00100'; a1 = '00101'; a2 = '00110'; a3 = '00111'
-t0 = '01000'; t1 = '01001'; t2 = '01010'; t3 = '01011'; t4 = '01100'; t5 = '01101'; t6 = '01110'; t7 = '01111'; t8 = '11000'; t9 = '11001'
-s0 = '10000'; s1 = '10001'; s2 = '10010'; s3 = '10011'; s4 = '10100'; s5 = '10101'; s6 = '10110'; s7 = '10111'
-k0 = '11010'; k1 = '11011'
-gp = '11100'
-sp = '11101'
-fp = '11110'
-ra = '11111'
-
-
+registers = ['zero', 'at', 'v0', 'v1', 'a0', 'a1', 'a2', 'a3', 't0', 't1', 't2', 't3', 't4', 't5', 't6', 't7', 's0','s1', 's2', 's3', 's4', 's5', 's6', 's7', 't8', 't9', 'k0', 'k1', 'gp', 'sp', 'fp', 'ra']
+hex_code = ['00000', '00001', '00010', '00011', '00100', '00101', '00110', '00111', '01000', '01001', '01010', '01011', '01100', '01101', '01110', '01111', '10000', '10001', '10010', '10011', '10100', '10101', '10110', '10111', '11000', '11001', '11010', '11011', '11100', '11101', '11110', '11111']
+r_inst = ['add', 'sub', 'and', 'or', 'nor', 'sll', 'srl', 'slt', 'slty']
+r_hex_code = ['100000', '100010', '100100', '100101', '100111', '000000', '000010', '101010', '101011']
+i_inst = ['lw', 'sw', 'addi', 'andi', 'ori', 'beq', 'bne', 'slti', 'sltiu']
+i_hex_code = ['100011', '101011', '001000', '001100', '001101', '000100', '000101', '001010', '001011']
 
 
 # Read in assembly 
@@ -67,26 +58,39 @@ for inst in instructions:
     # R Instructions
     if inst[0] == 'add' or inst[0] == 'sub' or inst[0] == 'and'  or inst[0] == 'or' or inst[0] == 'nor' or inst[0] == 'sll' or inst[0] == 'srl' or inst[0] == 'slt' or inst[0] == 'sltu':
         print("R Instruction")
-        opcode = zero
-        rd = inst[1]
-        rs = inst[2]
+        opcode = hex_code[0]
+        rd = hex_code[registers.index(inst[1])]
+        rs = hex_code[registers.index(inst[2])]
+        funct = r_hex_code[r_inst.index(inst[0])]
 
         if inst[0] == 'sll' or inst[0] == 'srl':
-            shamt = inst[3]
-            rt = zero
+            shamt = hex_code[registers.index(inst[3])]
+            rt = hex_code[0]
         else:
-            rt = inst[3]
-            shamt = zero
+            rt = hex_code[registers.index(inst[3])]
+            shamt = hex_code[0]
+    
 
-        print(opcode + rs + rt + rd + shamt + funct)
+        # Write 32b to output file
+        file_w.write(opcode + rs + rt + rd + shamt + funct + '\n')
+        mem_count = mem_count + 1
         
 
     
     # I Instructions
     elif inst[0] == 'lw' or inst[0] == 'sw' or inst[0] == 'addi' or inst[0] == 'andi' or inst[0] == 'ori' or inst[0] == 'beq' or inst[0] == 'bne' or inst[0] == 'slti' or inst[0] == 'sltiu':
-        print ('b')
+        print("I Instruction")
 
-
+        opcode = i_hex_code[i_inst.index(inst[0])]
+        rt = hex_code[registers.index(inst[1])]
+        
+        if inst[0] == 'lw' or inst[0] == 'sw':
+            rs = hex_code[registers.index(inst[3])]
+            immediate = inst[2]
+        else:
+            rs = hex_code[registers.index(inst[2])]
+            immediate = inst[3]
+            
     # J Instructions    
     elif inst[0] == 'j' or inst[0] == 'jal':
         print('c')

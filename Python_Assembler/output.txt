@@ -1,4 +1,5 @@
 Machine Code Output
 DTW
 
-instruction_mem[0] = 32'binstruction_mem[0] = 32'b
+instruction_mem[0] = 32'b0000010010100011000100000100000
+instruction_mem[4] = 32'b0000010001100101001100000100010

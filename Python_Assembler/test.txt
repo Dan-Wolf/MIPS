@@ -1,2 +1,2 @@
-addi s1 s2 0000000000010100
 add s1 s2 s1
+sub s3 s1 s2
