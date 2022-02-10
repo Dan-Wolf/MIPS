@@ -35,7 +35,10 @@ module register_mem (
         else begin 
             // Write to register if regWrite is set
             if (regWrite)
-                RF[wrReg] <= wrData;
+                if (wrReg == 4'b0000)
+                    RF[wrReg] <= 4'b0000;
+                else
+                    RF[wrReg] <= wrData;
             else 
                 RF[wrReg] <= RF[wrReg];
         end
