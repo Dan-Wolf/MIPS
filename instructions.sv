@@ -26,8 +26,10 @@ module instruction_mem #(
         end
         else begin 
             // initialize memory 
-            instruction_mem[0] = 32'b000000_00001_00001_01000_00000_100000;  // add 1+1 to reg8
-            instruction_mem[4] = 32'b000000_00000_00001_01001_00000_100000;  // add 0+1 to reg9
+            instruction_mem[0] = 32'b0;
+            instruction_mem[4] = 32'b00100000000100010000000000000001;
+            instruction_mem[8] = 32'b10101100000100010000000000000000;
+            instruction_mem[12] = 32'b10001100000100100000000000000000;
         end 
     end
     // TODO: Understand how to implement instruction memory input

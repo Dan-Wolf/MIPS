@@ -12,12 +12,14 @@ module dataMemory (
             output  logic   [31:0]  readData
 );
 
+    localparam MEM_SIZE = 1028;
+
     int i;
-    logic [31:0] ram[255:0];
+    logic [31:0] ram[MEM_SIZE:0];
 
     always @(posedge clk or negedge resetN) begin 
         if (~resetN) begin 
-            for (i=0; i < 256; i++) begin 
+            for (i=0; i <= MEM_SIZE; i++) begin 
                 ram[i] <= 32'b0;
             end
         end

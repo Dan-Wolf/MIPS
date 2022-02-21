@@ -72,7 +72,7 @@ for inst in instructions:
     
 
         # Write 32b to output file
-        file_w.write(opcode + rs + rt + rd + shamt + funct + '\n')
+        file_w.write(opcode + rs + rt + rd + shamt + funct + ';' + '\n')
         mem_count = mem_count + 1
         
 
@@ -91,7 +91,7 @@ for inst in instructions:
             rs = hex_code[registers.index(inst[2])]
             immediate = inst[3]
         
-        file_w.write(opcode + rs + rt + immediate + '\n')
+        file_w.write(opcode + rs + rt + immediate + ';' + '\n')
         mem_count = mem_count + 1
 
 
@@ -104,7 +104,7 @@ for inst in instructions:
         else:
             opcode = '000011'
 
-        file_w.write(opcode + address + '\n')
+        file_w.write(opcode + address + ';' + '\n')
         mem_count = mem_count + 1
     
 

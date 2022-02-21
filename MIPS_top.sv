@@ -10,7 +10,7 @@ Description:    This module is the top level entity. All submodules of the MIPS 
 
 module MIPS (   input   wire    clk,
                 input   wire    resetN
-        );
+);
 
     // Program Counter
     logic   [31:0]  PC, PC_next, PC_4, PC_branch;
@@ -108,7 +108,7 @@ module MIPS (   input   wire    clk,
     assign regWriteData = MemtoReg ? dMem_data : ALU_Out;
 
     // PC_next Logic
-    assign PC_4 = PC + 32'h0000_0004;   // Increment PC Counter 
+    assign PC_4 = (resetN) ? PC + 32'h0000_0004 : 32'h0000_0000;   // Increment PC Counter 
     assign PC_branch = {imdtVal[28:0], 2'b00} + PC_4;
 
     logic b_and_z;

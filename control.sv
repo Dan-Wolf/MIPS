@@ -75,6 +75,30 @@ always_comb begin
                             RegWrite    =   1'b0;
                             ALUOp       =   2'b01;
             end 
+
+            6'b001000:  begin // addi
+                            RegDst      =   1'bx;
+                            Branch      =   1'b0;
+                            MemRead     =   1'b0;
+                            MemtoReg    =   1'bx;
+                            MemWrite    =   1'b0;
+                            ALUSrc      =   1'b1;
+                            RegWrite    =   1'b0;
+                            ALUOp       =   2'b00;
+            end
+
+            6'b001000:  begin // subi
+                            RegDst      =   1'bx;
+                            Branch      =   1'b0;
+                            MemRead     =   1'b0;
+                            MemtoReg    =   1'bx;
+                            MemWrite    =   1'b0;
+                            ALUSrc      =   1'b1;
+                            RegWrite    =   1'b0;
+                            ALUOp       =   2'b01;
+            end
+
+            
             default:        begin 
                             RegDst      =   1'b0;
                             Branch      =   1'b0;  
