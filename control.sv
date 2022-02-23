@@ -10,6 +10,7 @@ module control (
     input   logic   [5:0]   opCode,
     input   logic           resetN,
     output  logic           RegDst,
+    output  logic           Jump,
     output  logic           Branch, 
     output  logic           MemRead,
     output  logic           MemtoReg,
@@ -22,6 +23,7 @@ module control (
 always_comb begin 
     if (~resetN) begin 
         RegDst      =   1'b0;
+        Jump        =   1'b0;
         Branch      =   1'b0;  
         MemRead     =   1'b0;
         MemtoReg    =   1'b0; 
@@ -34,6 +36,7 @@ always_comb begin
         case (opCode)
             6'b000000:  begin  // R-format
                             RegDst      =   1'b1;
+                            Jump        =   1'b0;
                             Branch      =   1'b0;  
                             MemRead     =   1'b0;
                             MemtoReg    =   1'b0; 
@@ -43,8 +46,21 @@ always_comb begin
                             ALUOp       =   2'b10;
             end 
 
+            6'b000010:  begin // jump
+                            RegDst      =   1'b0;
+                            Jump        =   1'b1;
+                            Branch      =   1'b0;
+                            MemRead     =   1'b0;
+                            MemtoReg    =   1'b0;
+                            MemWrite    =   1'b0;
+                            ALUSrc      =   1'b0;
+                            RegWrite    =   1'b0;
+                            ALUOp       =   2'b00;
+            end
+
             6'b100011:  begin // lw 
                             RegDst      =   1'b0;
+                            Jump        =   1'b0;
                             Branch      =   1'b0;  
                             MemRead     =   1'b1;
                             MemtoReg    =   1'b1; 
@@ -56,6 +72,7 @@ always_comb begin
 
             6'b101011:  begin // sw
                             RegDst      =   1'bx;
+                            Jump        =   1'b0;
                             Branch      =   1'b0;  
                             MemRead     =   1'b0;
                             MemtoReg    =   1'bx; 
@@ -67,6 +84,7 @@ always_comb begin
 
             6'b000100:  begin // beq
                             RegDst      =   1'bx;
+                            Jump        =   1'b0;
                             Branch      =   1'b1;  
                             MemRead     =   1'b0;
                             MemtoReg    =   1'bx; 
@@ -77,30 +95,21 @@ always_comb begin
             end 
 
             6'b001000:  begin // addi
-                            RegDst      =   1'bx;
+                            RegDst      =   1'b0;
+                            Jump        =   1'b0;
                             Branch      =   1'b0;
                             MemRead     =   1'b0;
-                            MemtoReg    =   1'bx;
+                            MemtoReg    =   1'b0;
                             MemWrite    =   1'b0;
                             ALUSrc      =   1'b1;
-                            RegWrite    =   1'b0;
+                            RegWrite    =   1'b1;
                             ALUOp       =   2'b00;
-            end
-
-            6'b001000:  begin // subi
-                            RegDst      =   1'bx;
-                            Branch      =   1'b0;
-                            MemRead     =   1'b0;
-                            MemtoReg    =   1'bx;
-                            MemWrite    =   1'b0;
-                            ALUSrc      =   1'b1;
-                            RegWrite    =   1'b0;
-                            ALUOp       =   2'b01;
             end
 
             
             default:        begin 
                             RegDst      =   1'b0;
+                            Jump        =   1'b0;
                             Branch      =   1'b0;  
                             MemRead     =   1'b0;
                             MemtoReg    =   1'b0; 

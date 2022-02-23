@@ -28,8 +28,8 @@ module instruction_mem #(
             // initialize memory 
             instruction_mem[0] = 32'b0;
             instruction_mem[4] = 32'b00100000000100010000000000000001;
-            instruction_mem[8] = 32'b10101100000100010000000000000000;
-            instruction_mem[12] = 32'b10001100000100100000000000000000;
+           // instruction_mem[8] = 32'b10101100000100010000000000000000;
+           // instruction_mem[12] = 32'b10001100000100100000000000000000;
         end 
     end
     // TODO: Understand how to implement instruction memory input
