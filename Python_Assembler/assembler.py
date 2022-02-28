@@ -53,7 +53,11 @@ for inst in instructions:
     file_w.write(str(mem_count*4))
     file_w.write("] = 32'b")
 
-  
+    # NOP Instruction 
+    if inst[0] == 'nop':
+        print("NOP Instruction")
+        file_w.write('00000000000000000000000000000000' + ';' + '\n')
+        mem_count = mem_count + 1
       
     # R Instructions
     if inst[0] == 'add' or inst[0] == 'sub' or inst[0] == 'and'  or inst[0] == 'or' or inst[0] == 'nor' or inst[0] == 'sll' or inst[0] == 'srl' or inst[0] == 'slt' or inst[0] == 'sltu':
