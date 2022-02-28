@@ -10,360 +10,346 @@ z2
 cModel Technology
 dC:/intelFPGA_lite/20.1
 vALU
-Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z1 !s110 1645581455
+Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z1 !s110 1646084630
 !i10b 1
-!s100 170B4T^zi_0<YF=:LX]hW3
-Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IGXSelBE2DD[n2TL7igT<82
-Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s100 PO9A[dm6:94h]cK3FDBI^0
+I4AXlOPWTkV`<I@S:cmTVJ3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 ALU_sv_unit
 S1
-Z4 dD:/Senior_Project/MIPS/ModelSim
-Z5 w1645469020
+Z3 dD:/Senior_Project/MIPS/ModelSim
+w1646081078
 8D:/Senior_Project/MIPS/ALU.sv
 FD:/Senior_Project/MIPS/ALU.sv
-!i122 20
-L0 11 22
-Z6 OV;L;2020.1;71
+Z4 L0 11
+Z5 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1645581454.000000
+Z6 !s108 1646084630.000000
 !s107 D:/Senior_Project/MIPS/ALU.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/ALU.sv|
 !i113 1
-Z8 o-work work -sv
-Z9 tCvgOpt 0
+Z7 o-work work -sv
+Z8 tCvgOpt 0
 n@a@l@u
 vALUControl
 R0
-Z10 !s110 1645583056
+Z9 !s110 1646084631
 !i10b 1
-!s100 aizL2GWYNM=]k1I=SKdP72
+!s100 JzZ4X6R7CokT;nE:XnN0<2
+IlkP??lBV_Z7W^lkJVmi:82
 R2
-I0NNbAdc=;J4ce0acOzLXL3
-R3
+!s105 ALUControl_sv_unit
 S1
-R4
-w1645582158
+R3
+w1646078478
 8D:/Senior_Project/MIPS/ALUControl.sv
 FD:/Senior_Project/MIPS/ALUControl.sv
-!i122 33
-L0 11 24
-R6
+R4
+R5
 r1
 !s85 0
 31
-Z11 !s108 1645583056.000000
+R6
 !s107 D:/Senior_Project/MIPS/ALUControl.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/ALUControl.sv|
 !i113 1
+R7
 R8
-R9
 n@a@l@u@control
 vcontrol
 R0
-!s110 1645583099
+R9
 !i10b 1
-!s100 2Mg9dA<m^l7=eNlYjGS?N0
+!s100 YTIT0Q428?[=CP7>Q?f<h3
+I56M15co2`V6Y=RMPjU`=72
 R2
-IA`?9@4?`giV;QT@>BSoiD3
-R3
+!s105 control_sv_unit
 S1
-R4
-w1645583092
+R3
+w1645584408
 8D:/Senior_Project/MIPS/control.sv
 FD:/Senior_Project/MIPS/control.sv
-!i122 35
-L0 9 119
-R6
+L0 9
+R5
 r1
 !s85 0
 31
-!s108 1645583099.000000
+!s108 1646084631.000000
 !s107 D:/Senior_Project/MIPS/control.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/control.sv|
 !i113 1
+R7
 R8
-R9
 vdataMemory
 R0
-R1
+!s110 1646084632
 !i10b 1
-!s100 j3`@Q7j89Zn4a1Nm1?NiU3
+!s100 baHRL3aVjm`<:0;Gd<eQR3
+I_I7]Dl9o>b35lHk9Ab`z@3
 R2
-IAVHb]3n?MLb>>QA;=4PA72
-R3
+!s105 dataMemory_sv_unit
 S1
-R4
+R3
 w1645470632
 8D:/Senior_Project/MIPS/dataMemory.sv
 FD:/Senior_Project/MIPS/dataMemory.sv
-!i122 23
-L0 8 27
-R6
+L0 8
+R5
 r1
 !s85 0
 31
-!s108 1645581455.000000
+Z10 !s108 1646084632.000000
 !s107 D:/Senior_Project/MIPS/dataMemory.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/dataMemory.sv|
 !i113 1
+R7
 R8
-R9
 ndata@memory
 vinstruction_mem
 R0
-Z12 !s110 1645581456
+!s110 1646084633
 !i10b 1
-!s100 4^_6DWb9;QBJO`6zZ=WTl3
+!s100 dnV:GFhE^hg_C<g;Ubii`1
+IaRcWBl5km;Y3`nNRLX=>00
 R2
-Id?lOZI^UWZP;F8>a^k9Ko1
-R3
+!s105 instructions_sv_unit
 S1
-R4
-w1645579362
+R3
+w1646084624
 8D:/Senior_Project/MIPS/instructions.sv
 FD:/Senior_Project/MIPS/instructions.sv
-!i122 24
-L0 11 31
-R6
+R4
+R5
 r1
 !s85 0
 31
-Z13 !s108 1645581456.000000
+R10
 !s107 D:/Senior_Project/MIPS/instructions.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/instructions.sv|
 !i113 1
+R7
 R8
-R9
 vMIPS
 R0
-R10
+Z11 !s110 1646084634
 !i10b 1
-!s100 QVB83K]hkdDEP>EIQz>;H2
+!s100 UO04]6hYPRo@YnV9:A`oD1
+I_@^9LfYODGBOEkRC38R9`3
 R2
-Ikf6ANRX>9nzz>DKN_<T[B2
-R3
+!s105 MIPS_top_sv_unit
 S1
-R4
-w1645583046
+R3
+w1646082866
 8D:/Senior_Project/MIPS/MIPS_top.sv
 FD:/Senior_Project/MIPS/MIPS_top.sv
-!i122 34
-L0 13 127
-R6
+L0 13
+R5
 r1
 !s85 0
 31
-R11
+!s108 1646084633.000000
 !s107 D:/Senior_Project/MIPS/MIPS_top.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/MIPS_top.sv|
 !i113 1
+R7
 R8
-R9
 n@m@i@p@s
 vregister_mem
 R0
-R12
+R11
 !i10b 1
-!s100 UoKMHzgC@3O7`E]e6HEHM2
+!s100 YYWi@UhJfdXf8Sz;YEYKU3
+IZ3CeXTbDXIDlRS4<c^0A^2
 R2
-IF3:fXRSVfa5;?mYIBKZ?51
-R3
+!s105 registers_sv_unit
 S1
-R4
-w1645581444
+R3
+w1646080740
 8D:/Senior_Project/MIPS/registers.sv
 FD:/Senior_Project/MIPS/registers.sv
-!i122 26
-L0 11 38
-R6
+R4
+R5
 r1
 !s85 0
 31
-R13
+!s108 1646084634.000000
 !s107 D:/Senior_Project/MIPS/registers.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/registers.sv|
 !i113 1
+R7
 R8
-R9
 vtb_ALUControl
 R0
-Z14 !s110 1645581457
+Z12 !s110 1646084636
 !i10b 1
-!s100 GW1H22F>EC^zH2eI3JETk1
+!s100 FaRN9;SPK0]Ofmkg2DJ]40
+Iac>KQ7m4809IP4DR8iaLC3
 R2
-IRg22k[k3kCzQT>Cg7I?oo2
-R3
+!s105 tb_ALUControl_sv_unit
 S1
-R4
-R5
+R3
+Z13 w1645469020
 8D:/Senior_Project/MIPS/tb_ALUControl.sv
 FD:/Senior_Project/MIPS/tb_ALUControl.sv
-!i122 28
-L0 8 24
-R6
+L0 8
+R5
 r1
 !s85 0
 31
-Z15 !s108 1645581457.000000
+Z14 !s108 1646084635.000000
 !s107 D:/Senior_Project/MIPS/tb_ALUControl.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/tb_ALUControl.sv|
 !i113 1
+R7
 R8
-R9
 ntb_@a@l@u@control
 vtb_control
 R0
-R14
+R12
 !i10b 1
-!s100 7VMhnJMa?[IE5eTcic:Y:3
+!s100 bYK:E]mfG`dVSDHlgW_UN2
+I@SLcOQNaXbbR;LZ^nIA4U1
 R2
-IK`WBUKh`fE7gBXmADEZ0C0
-R3
+!s105 tb_control_sv_unit
 S1
-R4
-Z16 w1645469022
+R3
+Z15 w1645469022
 8D:/Senior_Project/MIPS/tb_control.sv
 FD:/Senior_Project/MIPS/tb_control.sv
-!i122 29
-L0 8 23
-R6
+L0 8
+R5
 r1
 !s85 0
 31
-R15
+!s108 1646084636.000000
 !s107 D:/Senior_Project/MIPS/tb_control.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/tb_control.sv|
 !i113 1
+R7
 R8
-R9
 vtb_dataMemory
 R0
-R14
+!s110 1646084637
 !i10b 1
-!s100 j9K7Jm@5B>F?J5UK3@BcD0
+!s100 n4=AfCjGXbkaleX6`HE>>3
+InoHR:bGHQ`[f]VG]>@V3l3
 R2
-If3M7CPX6DEg1oU>5nRe6A0
-R3
+!s105 tb_dataMemory_sv_unit
 S1
-R4
-R16
+R3
+R15
 8D:/Senior_Project/MIPS/tb_dataMemory.sv
 FD:/Senior_Project/MIPS/tb_dataMemory.sv
-!i122 30
-L0 8 32
-R6
+L0 8
+R5
 r1
 !s85 0
 31
-R15
+Z16 !s108 1646084637.000000
 !s107 D:/Senior_Project/MIPS/tb_dataMemory.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/tb_dataMemory.sv|
 !i113 1
+R7
 R8
-R9
 ntb_data@memory
 vtb_instructions
 R0
-Z17 !s110 1645581458
+Z17 !s110 1646084638
 !i10b 1
-!s100 HLN>gmBIOJjbYzU_d4QS90
+!s100 B<H7e86o]l7DI7fah9]DM2
+Ie6YVdOiFXS^Cz<A8^zZ[X3
 R2
-I3Jzd_f7FGRIaZ`YZA9enB1
-R3
+!s105 tb_instructions_sv_unit
 S1
-R4
-R16
+R3
+R15
 8D:/Senior_Project/MIPS/tb_instructions.sv
 FD:/Senior_Project/MIPS/tb_instructions.sv
-!i122 31
-L0 8 20
-R6
+L0 8
+R5
 r1
 !s85 0
 31
-Z18 !s108 1645581458.000000
+R16
 !s107 D:/Senior_Project/MIPS/tb_instructions.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/tb_instructions.sv|
 !i113 1
+R7
 R8
-R9
 vtb_MIPS
 R0
 R17
 !i10b 1
-!s100 Ic@koi_JiNJoB4C1MzRzg2
+!s100 f<NKJ^VN70PKR:^^cn>IC2
+IcLCkO>YP8fNYKkh>bdUId3
 R2
-IiYRe5O5ZRPeM`nY]2BHKd1
-R3
+!s105 tb_MIPS_sv_unit
 S1
-R4
+R3
 w1645475072
 8D:/Senior_Project/MIPS/tb_MIPS.sv
 FD:/Senior_Project/MIPS/tb_MIPS.sv
-!i122 32
-L0 8 19
-R6
+L0 8
+R5
 r1
 !s85 0
 31
-R18
+!s108 1646084638.000000
 !s107 D:/Senior_Project/MIPS/tb_MIPS.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/tb_MIPS.sv|
 !i113 1
+R7
 R8
-R9
 ntb_@m@i@p@s
 vtb_MIPSALU
 R0
-R14
+!s110 1646084635
 !i10b 1
-!s100 8MLDKLK>1k1@jGNloTGF@2
+!s100 GFNFKdi3lif1D3L0zb@b51
+IgBcj[j2J@Co_=:hA]WTl10
 R2
-I:LUV[NK]RfSC:ka9]KLNd1
-R3
+!s105 tb_ALU_sv_unit
 S1
-R4
-R5
+R3
+R13
 8D:/Senior_Project/MIPS/tb_ALU.sv
 FD:/Senior_Project/MIPS/tb_ALU.sv
-!i122 27
-L0 8 22
-R6
+L0 8
+R5
 r1
 !s85 0
 31
-R15
+R14
 !s107 D:/Senior_Project/MIPS/tb_ALU.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/tb_ALU.sv|
 !i113 1
+R7
 R8
-R9
 ntb_@m@i@p@s@a@l@u
 vtb_registers
 R0
-!s110 1645581454
+R1
 !i10b 1
-!s100 Z2b:g[48YU>FVBiM7Y0YU3
+!s100 FMVlCgPkYi[M7;V<D]Ub20
+I2jblHI6hV2I7SEA1fB8aT3
 R2
-I5nUM73g4k?<?76gR=kcXb1
-R3
+!s105 tb_registers_sv_unit
 S1
-R4
-R16
+R3
+R15
 8D:/Senior_Project/MIPS/tb_registers.sv
 FD:/Senior_Project/MIPS/tb_registers.sv
-!i122 19
-L0 8 25
-R6
+L0 8
+R5
 r1
 !s85 0
 31
-R7
+!s108 1646084629.000000
 !s107 D:/Senior_Project/MIPS/tb_registers.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/tb_registers.sv|
 !i113 1
+R7
 R8
-R9

@@ -24,7 +24,7 @@ module  ALUControl   (  input   logic   [1:0]   ALUOp,
                     6'b100100:  ALUCtl <= 4'b0000;  // and 
                     6'b100101:  ALUCtl <= 4'b0001;  // or  
                     6'b101010:  ALUCtl <= 4'b0111;  // slt 
-                    6'b101111:  ALUCtl <= 4'b1100;  // nor
+                    6'b100111:  ALUCtl <= 4'b1100;  // nor
                     default:    ALUCtl <= 4'b0000;
                 endcase
             end

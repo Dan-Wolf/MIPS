@@ -64,6 +64,7 @@ module MIPS (   input   wire    clk,
     assign rdReg2 = instruction[20:16];
 
     register_mem regMem(
+        .clk       (clk),
         .regWrite  (RegWrite),
         .resetN    (resetN),
         .rdReg1    (rdReg1),
@@ -125,7 +126,7 @@ module MIPS (   input   wire    clk,
 
     // PC_next Logic
     assign PC_4 = (resetN) ? PC + 32'h0000_0004 : 32'h0000_0000;   // Increment PC Counter 
-    assign PC_branch = {imdtVal[28:0], 2'b00} + PC_4;
+    assign PC_branch = {imdtVal[29:0], 2'b00} + PC_4;
     assign PC_jump = {PC_4[31:28], instruction[25:0], 2'b00};
 
     logic b_and_z;

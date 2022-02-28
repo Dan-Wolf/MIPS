@@ -221,3 +221,5 @@ sim:/tb_MIPS/DUT/wrReg \
 sim:/tb_MIPS/DUT/zero
 run
 write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/Senior_Project/MIPS/ModelSim/wave.do
+# End time: 21:48:23 on Feb 22,2022, Elapsed time: 1:24:23
+# Errors: 0, Warnings: 1

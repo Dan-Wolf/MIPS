@@ -9,6 +9,7 @@ Description:    This module is the register memory of the MIPS. Capable of doing
 //=================================================================================================
 
 module register_mem (
+    input   logic           clk,
     input   logic           regWrite, 
     input   logic           resetN,   
     input   logic   [4:0]   rdReg1, rdReg2, wrReg,
@@ -25,7 +26,7 @@ module register_mem (
     assign data2 = RF[rdReg2];
 
 
-    always_comb begin 
+    always @(posedge clk or negedge resetN) begin 
         // Reset Registers to 0
         if(~resetN) begin 
             for (i=0; i < 32; i++) begin 

@@ -8,10 +8,10 @@ Description:    This module is a 32bit ALU. Performs arithmetic on operands base
 
 //=================================================================================================
 
-module ALU  (   input   logic   [31:0]  A, B,       // Operands
-                input   logic   [3:0]   opCode,     // ALU Op COde
-                output  logic   [31:0]  ALU_Out,    // Output
-                output  logic           zero        // Zero Flag
+module ALU  (   input   logic   signed  [31:0]  A, B,       // Operands
+                input   logic           [3:0]   opCode,     // ALU Op COde
+                output  logic   signed  [31:0]  ALU_Out,    // Output
+                output  logic                   zero        // Zero Flag
         );
 
 always_comb begin 
