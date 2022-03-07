@@ -1,78 +1,106 @@
-D:/Senior_Project/MIPS/tb_MIPS.sv {1 {vlog -work work -sv -stats=none D:/Senior_Project/MIPS/tb_MIPS.sv
+C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/ALU.sv {1 {vlog -work work -sv -stats=none C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/ALU.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module tb_MIPS
+-- Compiling module ALU
 
 Top level modules:
-	tb_MIPS
+	ALU
 
-} {} {}} D:/Senior_Project/MIPS/tb_ALU.sv {1 {vlog -work work -sv -stats=none D:/Senior_Project/MIPS/tb_ALU.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module tb_MIPSALU
-
-Top level modules:
-	tb_MIPSALU
-
-} {} {}} D:/Senior_Project/MIPS/registers.sv {1 {vlog -work work -sv -stats=none D:/Senior_Project/MIPS/registers.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module register_mem
-
-Top level modules:
-	register_mem
-
-} {} {}} D:/Senior_Project/MIPS/tb_ALUControl.sv {1 {vlog -work work -sv -stats=none D:/Senior_Project/MIPS/tb_ALUControl.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module tb_ALUControl
-
-Top level modules:
-	tb_ALUControl
-
-} {} {}} D:/Senior_Project/MIPS/tb_dataMemory.sv {1 {vlog -work work -sv -stats=none D:/Senior_Project/MIPS/tb_dataMemory.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module tb_dataMemory
-
-Top level modules:
-	tb_dataMemory
-
-} {} {}} D:/Senior_Project/MIPS/control.sv {1 {vlog -work work -sv -stats=none D:/Senior_Project/MIPS/control.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module control
-
-Top level modules:
-	control
-
-} {} {}} D:/Senior_Project/MIPS/tb_instructions.sv {1 {vlog -work work -sv -stats=none D:/Senior_Project/MIPS/tb_instructions.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module tb_instructions
-
-Top level modules:
-	tb_instructions
-
-} {} {}} D:/Senior_Project/MIPS/ALUControl.sv {1 {vlog -work work -sv -stats=none D:/Senior_Project/MIPS/ALUControl.sv
+} {} {}} C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/ALUControl.sv {1 {vlog -work work -sv -stats=none C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/ALUControl.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module ALUControl
 
 Top level modules:
 	ALUControl
 
-} {} {}} D:/Senior_Project/MIPS/dataMemory.sv {1 {vlog -work work -sv -stats=none D:/Senior_Project/MIPS/dataMemory.sv
+} {} {}} C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/dataMemory.sv {1 {vlog -work work -sv -stats=none C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/dataMemory.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module dataMemory
 
 Top level modules:
 	dataMemory
 
-} {} {}} D:/Senior_Project/MIPS/tb_registers.sv {1 {vlog -work work -sv -stats=none D:/Senior_Project/MIPS/tb_registers.sv
+} {} {}} C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/MIPS_top.sv {1 {vlog -work work -sv -stats=none C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/MIPS_top.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module MIPS
+
+Top level modules:
+	MIPS
+
+} {} {}} C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/pipeline_reg.sv {1 {vlog -work work -sv -stats=none C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/pipeline_reg.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module pipeline_reg
+
+Top level modules:
+	pipeline_reg
+
+} {} {}} C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_registers.sv {1 {vlog -work work -sv -stats=none C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_registers.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module tb_registers
 
 Top level modules:
 	tb_registers
 
-} {} {}} D:/Senior_Project/MIPS/tb_control.sv {1 {vlog -work work -sv -stats=none D:/Senior_Project/MIPS/tb_control.sv
+} {} {}} C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/instructions.sv {1 {vlog -work work -sv -stats=none C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/instructions.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module instruction_mem
+
+Top level modules:
+	instruction_mem
+
+} {} {}} C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_MIPS.sv {1 {vlog -work work -sv -stats=none C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_MIPS.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_MIPS
+
+Top level modules:
+	tb_MIPS
+
+} {} {}} C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_control.sv {1 {vlog -work work -sv -stats=none C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_control.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module tb_control
 
 Top level modules:
 	tb_control
+
+} {} {}} C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_dataMemory.sv {1 {vlog -work work -sv -stats=none C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_dataMemory.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_dataMemory
+
+Top level modules:
+	tb_dataMemory
+
+} {} {}} C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/registers.sv {1 {vlog -work work -sv -stats=none C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/registers.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module register_mem
+
+Top level modules:
+	register_mem
+
+} {} {}} C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_ALUControl.sv {1 {vlog -work work -sv -stats=none C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_ALUControl.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_ALUControl
+
+Top level modules:
+	tb_ALUControl
+
+} {} {}} C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/control.sv {1 {vlog -work work -sv -stats=none C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/control.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module control
+
+Top level modules:
+	control
+
+} {} {}} C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_instructions.sv {1 {vlog -work work -sv -stats=none C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_instructions.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_instructions
+
+Top level modules:
+	tb_instructions
+
+} {} {}} C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_ALU.sv {1 {vlog -work work -sv -stats=none C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_ALU.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_MIPSALU
+
+Top level modules:
+	tb_MIPSALU
 
 } {} {}}

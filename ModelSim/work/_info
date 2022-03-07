@@ -11,345 +11,394 @@ cModel Technology
 dC:/intelFPGA_lite/20.1
 vALU
 Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z1 !s110 1646084630
+Z1 !s110 1646682000
 !i10b 1
 !s100 PO9A[dm6:94h]cK3FDBI^0
-I4AXlOPWTkV`<I@S:cmTVJ3
+IV2L5W1GO6DJYXR`WSF<eV2
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 !s105 ALU_sv_unit
 S1
-Z3 dD:/Senior_Project/MIPS/ModelSim
-w1646081078
-8D:/Senior_Project/MIPS/ALU.sv
-FD:/Senior_Project/MIPS/ALU.sv
-Z4 L0 11
-Z5 OV;L;10.5b;63
+Z3 dC:/Users/S217Lab.PC4969/Documents/GIT/MIPS/ModelSim
+Z4 w1646677974
+8C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/ALU.sv
+FC:/Users/S217Lab.PC4969/Documents/GIT/MIPS/ALU.sv
+Z5 L0 11
+Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z6 !s108 1646084630.000000
-!s107 D:/Senior_Project/MIPS/ALU.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/ALU.sv|
+Z7 !s108 1646682000.000000
+!s107 C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/ALU.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/ALU.sv|
 !i113 1
-Z7 o-work work -sv
-Z8 tCvgOpt 0
+Z8 o-work work -sv
+Z9 tCvgOpt 0
 n@a@l@u
 vALUControl
 R0
-Z9 !s110 1646084631
+R1
 !i10b 1
 !s100 JzZ4X6R7CokT;nE:XnN0<2
-IlkP??lBV_Z7W^lkJVmi:82
+IC^ZQzfB`@gmga[>QFJ^U00
 R2
 !s105 ALUControl_sv_unit
 S1
 R3
-w1646078478
-8D:/Senior_Project/MIPS/ALUControl.sv
-FD:/Senior_Project/MIPS/ALUControl.sv
 R4
+8C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/ALUControl.sv
+FC:/Users/S217Lab.PC4969/Documents/GIT/MIPS/ALUControl.sv
 R5
+R6
 r1
 !s85 0
 31
-R6
-!s107 D:/Senior_Project/MIPS/ALUControl.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/ALUControl.sv|
-!i113 1
 R7
+!s107 C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/ALUControl.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/ALUControl.sv|
+!i113 1
 R8
+R9
 n@a@l@u@control
 vcontrol
 R0
-R9
+R1
 !i10b 1
 !s100 YTIT0Q428?[=CP7>Q?f<h3
-I56M15co2`V6Y=RMPjU`=72
+Imfla?]T]`_bMae3[hPc?R0
 R2
 !s105 control_sv_unit
 S1
 R3
-w1645584408
-8D:/Senior_Project/MIPS/control.sv
-FD:/Senior_Project/MIPS/control.sv
+R4
+8C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/control.sv
+FC:/Users/S217Lab.PC4969/Documents/GIT/MIPS/control.sv
 L0 9
-R5
+R6
 r1
 !s85 0
 31
-!s108 1646084631.000000
-!s107 D:/Senior_Project/MIPS/control.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/control.sv|
-!i113 1
 R7
+!s107 C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/control.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/control.sv|
+!i113 1
 R8
+R9
 vdataMemory
 R0
-!s110 1646084632
+Z10 !s110 1646682001
 !i10b 1
 !s100 baHRL3aVjm`<:0;Gd<eQR3
-I_I7]Dl9o>b35lHk9Ab`z@3
+I?YLNKJf^POm1BK0?1Na552
 R2
 !s105 dataMemory_sv_unit
 S1
 R3
-w1645470632
-8D:/Senior_Project/MIPS/dataMemory.sv
-FD:/Senior_Project/MIPS/dataMemory.sv
+R4
+8C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/dataMemory.sv
+FC:/Users/S217Lab.PC4969/Documents/GIT/MIPS/dataMemory.sv
 L0 8
-R5
+R6
 r1
 !s85 0
 31
-Z10 !s108 1646084632.000000
-!s107 D:/Senior_Project/MIPS/dataMemory.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/dataMemory.sv|
+Z11 !s108 1646682001.000000
+!s107 C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/dataMemory.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/dataMemory.sv|
 !i113 1
-R7
 R8
+R9
 ndata@memory
 vinstruction_mem
 R0
-!s110 1646084633
+R10
 !i10b 1
 !s100 dnV:GFhE^hg_C<g;Ubii`1
-IaRcWBl5km;Y3`nNRLX=>00
+ImkiVGF9FHCneNIMgUaa[b2
 R2
 !s105 instructions_sv_unit
 S1
 R3
-w1646084624
-8D:/Senior_Project/MIPS/instructions.sv
-FD:/Senior_Project/MIPS/instructions.sv
 R4
+8C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/instructions.sv
+FC:/Users/S217Lab.PC4969/Documents/GIT/MIPS/instructions.sv
 R5
+R6
 r1
 !s85 0
 31
-R10
-!s107 D:/Senior_Project/MIPS/instructions.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/instructions.sv|
+R11
+!s107 C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/instructions.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/instructions.sv|
 !i113 1
-R7
 R8
+R9
 vMIPS
 R0
-Z11 !s110 1646084634
+R10
 !i10b 1
 !s100 UO04]6hYPRo@YnV9:A`oD1
-I_@^9LfYODGBOEkRC38R9`3
+IaCIQoP<ee77=i32keWMi40
 R2
 !s105 MIPS_top_sv_unit
 S1
 R3
-w1646082866
-8D:/Senior_Project/MIPS/MIPS_top.sv
-FD:/Senior_Project/MIPS/MIPS_top.sv
-L0 13
-R5
+R4
+8C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/MIPS_top.sv
+FC:/Users/S217Lab.PC4969/Documents/GIT/MIPS/MIPS_top.sv
+Z12 L0 13
+R6
 r1
 !s85 0
 31
-!s108 1646084633.000000
-!s107 D:/Senior_Project/MIPS/MIPS_top.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/MIPS_top.sv|
+R11
+!s107 C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/MIPS_top.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/MIPS_top.sv|
 !i113 1
-R7
 R8
+R9
 n@m@i@p@s
+vMIPS_Pipelined
+R0
+!s110 1646684400
+!i10b 1
+!s100 DDP3AR^USAd?VC8P=A@`a3
+IL=[KeTNYbDaBI:0YfbcLJ1
+R2
+!s105 MIPS_Pipelined_sv_unit
+S1
+R3
+w1646684392
+8C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/MIPS_Pipelined.sv
+FC:/Users/S217Lab.PC4969/Documents/GIT/MIPS/MIPS_Pipelined.sv
+R12
+R6
+r1
+!s85 0
+31
+!s108 1646684399.000000
+!s107 C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/MIPS_Pipelined.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/MIPS_Pipelined.sv|
+!i113 1
+R8
+R9
+n@m@i@p@s_@pipelined
+vpipeline_reg
+R0
+!s110 1646683038
+!i10b 1
+!s100 h9TZDWmZJ1i<9mXA?2G[T0
+IV0LdD>0P5JRIX2z>lAESc2
+R2
+!s105 pipeline_reg_sv_unit
+S1
+R3
+w1646683034
+8C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/pipeline_reg.sv
+FC:/Users/S217Lab.PC4969/Documents/GIT/MIPS/pipeline_reg.sv
+L0 4
+R6
+r1
+!s85 0
+31
+!s108 1646683038.000000
+!s107 C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/pipeline_reg.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/pipeline_reg.sv|
+!i113 1
+R8
+R9
 vregister_mem
 R0
-R11
+Z13 !s110 1646682002
 !i10b 1
 !s100 YYWi@UhJfdXf8Sz;YEYKU3
-IZ3CeXTbDXIDlRS4<c^0A^2
+I_n>=fFY>:WkAGYhEZVO7a1
 R2
 !s105 registers_sv_unit
 S1
 R3
-w1646080740
-8D:/Senior_Project/MIPS/registers.sv
-FD:/Senior_Project/MIPS/registers.sv
 R4
+8C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/registers.sv
+FC:/Users/S217Lab.PC4969/Documents/GIT/MIPS/registers.sv
 R5
+R6
 r1
 !s85 0
 31
-!s108 1646084634.000000
-!s107 D:/Senior_Project/MIPS/registers.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/registers.sv|
+Z14 !s108 1646682002.000000
+!s107 C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/registers.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/registers.sv|
 !i113 1
-R7
 R8
+R9
 vtb_ALUControl
 R0
-Z12 !s110 1646084636
+R13
 !i10b 1
 !s100 FaRN9;SPK0]Ofmkg2DJ]40
-Iac>KQ7m4809IP4DR8iaLC3
+IGifGR1z163XcBk]1`BbT`2
 R2
 !s105 tb_ALUControl_sv_unit
 S1
 R3
-Z13 w1645469020
-8D:/Senior_Project/MIPS/tb_ALUControl.sv
-FD:/Senior_Project/MIPS/tb_ALUControl.sv
+R4
+8C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_ALUControl.sv
+FC:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_ALUControl.sv
 L0 8
-R5
-r1
-!s85 0
-31
-Z14 !s108 1646084635.000000
-!s107 D:/Senior_Project/MIPS/tb_ALUControl.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/tb_ALUControl.sv|
-!i113 1
-R7
-R8
-ntb_@a@l@u@control
-vtb_control
-R0
-R12
-!i10b 1
-!s100 bYK:E]mfG`dVSDHlgW_UN2
-I@SLcOQNaXbbR;LZ^nIA4U1
-R2
-!s105 tb_control_sv_unit
-S1
-R3
-Z15 w1645469022
-8D:/Senior_Project/MIPS/tb_control.sv
-FD:/Senior_Project/MIPS/tb_control.sv
-L0 8
-R5
-r1
-!s85 0
-31
-!s108 1646084636.000000
-!s107 D:/Senior_Project/MIPS/tb_control.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/tb_control.sv|
-!i113 1
-R7
-R8
-vtb_dataMemory
-R0
-!s110 1646084637
-!i10b 1
-!s100 n4=AfCjGXbkaleX6`HE>>3
-InoHR:bGHQ`[f]VG]>@V3l3
-R2
-!s105 tb_dataMemory_sv_unit
-S1
-R3
-R15
-8D:/Senior_Project/MIPS/tb_dataMemory.sv
-FD:/Senior_Project/MIPS/tb_dataMemory.sv
-L0 8
-R5
-r1
-!s85 0
-31
-Z16 !s108 1646084637.000000
-!s107 D:/Senior_Project/MIPS/tb_dataMemory.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/tb_dataMemory.sv|
-!i113 1
-R7
-R8
-ntb_data@memory
-vtb_instructions
-R0
-Z17 !s110 1646084638
-!i10b 1
-!s100 B<H7e86o]l7DI7fah9]DM2
-Ie6YVdOiFXS^Cz<A8^zZ[X3
-R2
-!s105 tb_instructions_sv_unit
-S1
-R3
-R15
-8D:/Senior_Project/MIPS/tb_instructions.sv
-FD:/Senior_Project/MIPS/tb_instructions.sv
-L0 8
-R5
-r1
-!s85 0
-31
-R16
-!s107 D:/Senior_Project/MIPS/tb_instructions.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/tb_instructions.sv|
-!i113 1
-R7
-R8
-vtb_MIPS
-R0
-R17
-!i10b 1
-!s100 f<NKJ^VN70PKR:^^cn>IC2
-IcLCkO>YP8fNYKkh>bdUId3
-R2
-!s105 tb_MIPS_sv_unit
-S1
-R3
-w1645475072
-8D:/Senior_Project/MIPS/tb_MIPS.sv
-FD:/Senior_Project/MIPS/tb_MIPS.sv
-L0 8
-R5
-r1
-!s85 0
-31
-!s108 1646084638.000000
-!s107 D:/Senior_Project/MIPS/tb_MIPS.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/tb_MIPS.sv|
-!i113 1
-R7
-R8
-ntb_@m@i@p@s
-vtb_MIPSALU
-R0
-!s110 1646084635
-!i10b 1
-!s100 GFNFKdi3lif1D3L0zb@b51
-IgBcj[j2J@Co_=:hA]WTl10
-R2
-!s105 tb_ALU_sv_unit
-S1
-R3
-R13
-8D:/Senior_Project/MIPS/tb_ALU.sv
-FD:/Senior_Project/MIPS/tb_ALU.sv
-L0 8
-R5
+R6
 r1
 !s85 0
 31
 R14
-!s107 D:/Senior_Project/MIPS/tb_ALU.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/tb_ALU.sv|
+!s107 C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_ALUControl.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_ALUControl.sv|
 !i113 1
-R7
 R8
+R9
+ntb_@a@l@u@control
+vtb_control
+R0
+R13
+!i10b 1
+!s100 bYK:E]mfG`dVSDHlgW_UN2
+I`8[n=[;YhNXhfSPI6:=Dk3
+R2
+!s105 tb_control_sv_unit
+S1
+R3
+R4
+8C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_control.sv
+FC:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_control.sv
+L0 8
+R6
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_control.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_control.sv|
+!i113 1
+R8
+R9
+vtb_dataMemory
+R0
+R13
+!i10b 1
+!s100 n4=AfCjGXbkaleX6`HE>>3
+IX@knRdT[6iGbKRPRlMELA0
+R2
+!s105 tb_dataMemory_sv_unit
+S1
+R3
+R4
+8C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_dataMemory.sv
+FC:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_dataMemory.sv
+L0 8
+R6
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_dataMemory.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_dataMemory.sv|
+!i113 1
+R8
+R9
+ntb_data@memory
+vtb_instructions
+R0
+Z15 !s110 1646682003
+!i10b 1
+!s100 B<H7e86o]l7DI7fah9]DM2
+I0@G2`hY3Z?inaKUQOSZbC0
+R2
+!s105 tb_instructions_sv_unit
+S1
+R3
+R4
+8C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_instructions.sv
+FC:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_instructions.sv
+L0 8
+R6
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_instructions.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_instructions.sv|
+!i113 1
+R8
+R9
+vtb_MIPS
+R0
+R15
+!i10b 1
+!s100 f<NKJ^VN70PKR:^^cn>IC2
+ITk3R^QE2@^[OoAJ?:a=]L1
+R2
+!s105 tb_MIPS_sv_unit
+S1
+R3
+R4
+8C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_MIPS.sv
+FC:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_MIPS.sv
+L0 8
+R6
+r1
+!s85 0
+31
+!s108 1646682003.000000
+!s107 C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_MIPS.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_MIPS.sv|
+!i113 1
+R8
+R9
+ntb_@m@i@p@s
+vtb_MIPSALU
+R0
+R13
+!i10b 1
+!s100 GFNFKdi3lif1D3L0zb@b51
+I:_9fOFamjZk>:2`eHW^@W2
+R2
+!s105 tb_ALU_sv_unit
+S1
+R3
+R4
+8C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_ALU.sv
+FC:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_ALU.sv
+L0 8
+R6
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_ALU.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_ALU.sv|
+!i113 1
+R8
+R9
 ntb_@m@i@p@s@a@l@u
 vtb_registers
 R0
 R1
 !i10b 1
 !s100 FMVlCgPkYi[M7;V<D]Ub20
-I2jblHI6hV2I7SEA1fB8aT3
+IY<B6T:@V>:WL<^G[N@X_D2
 R2
 !s105 tb_registers_sv_unit
 S1
 R3
-R15
-8D:/Senior_Project/MIPS/tb_registers.sv
-FD:/Senior_Project/MIPS/tb_registers.sv
+R4
+8C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_registers.sv
+FC:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_registers.sv
 L0 8
-R5
+R6
 r1
 !s85 0
 31
-!s108 1646084629.000000
-!s107 D:/Senior_Project/MIPS/tb_registers.sv|
-!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/tb_registers.sv|
-!i113 1
 R7
+!s107 C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_registers.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/S217Lab.PC4969/Documents/GIT/MIPS/tb_registers.sv|
+!i113 1
 R8
+R9
