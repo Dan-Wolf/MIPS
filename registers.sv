@@ -21,28 +21,25 @@ module register_mem (
     logic [31:0] RF [31:0]; // 32 registers each 32b
     int i;  
 
+    initial begin 
+        for (i=0; i < 32; i++) begin 
+            RF[i] = 32'b0;
+        end
+    end
+
     // Read from Register
     assign data1 = RF[rdReg1];
     assign data2 = RF[rdReg2];
 
-
-    always @(posedge clk or negedge resetN) begin 
-        // Reset Registers to 0
-        if(~resetN) begin 
-            for (i=0; i < 32; i++) begin 
-                RF[i] <= '0;
-            end 
-        end 
-        else begin 
-            // Write to register if regWrite is set
-            if (regWrite)
-                if (wrReg == 4'b0000)
-                    RF[wrReg] <= 4'b0000;
-                else
-                    RF[wrReg] <= wrData;
-            else 
-                RF[wrReg] <= RF[wrReg];
-        end
+    always @(posedge clk) begin 
+        // Write to register if regWrite is set
+        if (regWrite)
+            if (wrReg == 4'b0000)
+                RF[wrReg] <= 4'b0000;
+            else
+                RF[wrReg] <= wrData;
+        else 
+            RF[wrReg] <= RF[wrReg];
     end
     
             

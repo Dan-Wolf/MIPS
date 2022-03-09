@@ -13,7 +13,7 @@ timeunit 1ns; timeprecision 1ns;
 // Signal Declaration 
 logic   [5:0]   opCode;
 logic   [1:0]   ALUOp;
-logic           resetN, RegDst, Branch, MemRead, MemtoReg, MemWrite, ALUSrc, RegWrite;
+logic           resetN, Jump, RegDst, Branch, MemRead, MemtoReg, MemWrite, ALUSrc, RegWrite;
 
 control DUT(.*);
 

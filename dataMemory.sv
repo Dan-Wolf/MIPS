@@ -17,16 +17,15 @@ module dataMemory (
     int i;
     logic [31:0] ram[MEM_SIZE:0];
 
-    always @(posedge clk or negedge resetN) begin 
-        if (~resetN) begin 
-            for (i=0; i <= MEM_SIZE; i++) begin 
-                ram[i] <= 32'b0;
-            end
+    initial begin 
+        for (i=0; i < MEM_SIZE; i++) begin 
+            ram[i] <= 32'b0;
         end
-        else begin 
-            if (MemWrite)
-                ram[address] <= wrData;
-        end 
+    end
+
+    always @(posedge clk) begin 
+        if (MemWrite)
+            ram[address] <= wrData;
     end
 
     assign readData = MemRead ? ram[address] : 32'b0;

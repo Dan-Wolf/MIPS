@@ -11,7 +11,7 @@ module tb_registers;
 timeunit 1ns; timeprecision 1ns;
 
 // Signal Declaration 
-logic           regWrite, resetN;
+logic           clk, regWrite, resetN;
 logic   [4:0]   rdReg1, rdReg2, wrReg;
 logic   [31:0]  wrData, data1, data2;
 

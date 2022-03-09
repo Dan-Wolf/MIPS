@@ -10,7 +10,7 @@ Description:    This module is the top level entity. All submodules of the MIPS 
 
 //=================================================================================================
 
-module MIPS (   input   wire    clk,
+module MIPS_top (   input   wire    clk,
                 input   wire    resetN
 );
 
