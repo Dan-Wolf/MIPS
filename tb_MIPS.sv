@@ -15,7 +15,7 @@ logic clk, resetN;
 
 always #10 clk <= ~clk;
 
-MIPS DUT(.*);
+MIPS_Pipelined DUT(.*);
 
 initial begin 
     clk = 1'b0;

@@ -1,10 +1,18 @@
-# Compile of tb_registers.sv was successful.
+# Compile of MIPS_Pipelined.sv failed with 2 errors.
+# Compile of pipeline_reg.sv was successful.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of MIPS_Pipelined.sv was successful with warnings.
+# Compile of MIPS_Pipelined.sv was successful with warnings.
+# Compile of pipeline_reg.sv was successful.
+# 2 compiles, 16 failed with no errors.
 # Compile of ALU.sv was successful.
 # Compile of ALUControl.sv was successful.
 # Compile of control.sv was successful.
 # Compile of dataMemory.sv was successful.
 # Compile of instructions.sv was successful.
+# Compile of MIPS_Pipelined.sv was successful.
 # Compile of MIPS_top.sv was successful.
+# Compile of pipeline_reg.sv was successful.
 # Compile of registers.sv was successful.
 # Compile of tb_ALU.sv was successful.
 # Compile of tb_ALUControl.sv was successful.
@@ -12,214 +20,119 @@
 # Compile of tb_dataMemory.sv was successful.
 # Compile of tb_instructions.sv was successful.
 # Compile of tb_MIPS.sv was successful.
-# 14 compiles, 0 failed with no errors.
+# Compile of tb_registers.sv was successful.
+# 16 compiles, 0 failed with no errors.
+# Compile of MIPS_Pipelined.sv was successful.
+# Compile of tb_MIPS.sv was successful.
+# 2 compiles, 0 failed with no errors.
 vsim -gui work.tb_MIPS
 # vsim -gui work.tb_MIPS 
-# Start time: 20:24:00 on Feb 22,2022
+# Start time: 21:39:33 on Mar 09,2022
 # Loading sv_std.std
 # Loading work.tb_MIPS
-# Loading work.MIPS
+# Loading work.MIPS_Pipelined
 # Loading work.instruction_mem
+# Loading work.pipeline_reg
 # Loading work.control
 # Loading work.register_mem
 # Loading work.ALUControl
 # Loading work.ALU
 # Loading work.dataMemory
-add wave -position insertpoint  \
-sim:/tb_MIPS/DUT/ALU_Out
+# ** Warning: (vsim-3015) [PCDPC] - Port size (140) does not match connection size (71) for port 'data_in'. The port definition is at: D:/Senior_Project/MIPS/pipeline_reg.sv(7).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_MIPS/DUT/MEM_WB_reg File: D:/Senior_Project/MIPS/MIPS_Pipelined.sv Line: 205
+# ** Warning: (vsim-3015) [PCDPC] - Port size (140) does not match connection size (71) for port 'data_out'. The port definition is at: D:/Senior_Project/MIPS/pipeline_reg.sv(8).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_MIPS/DUT/MEM_WB_reg File: D:/Senior_Project/MIPS/MIPS_Pipelined.sv Line: 205
+do wave.do
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: danwo  Hostname: DESKTOP-PFIKTDD  ProcessID: 32896
-#           Attempting to use alternate WLF file "./wlfts63j5b".
+#           Attempting to use alternate WLF file "./wlftd7376c".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfts63j5b
-add wave -position insertpoint  \
-sim:/tb_MIPS/DUT/ALU_Out \
-sim:/tb_MIPS/DUT/ALUCtl \
-sim:/tb_MIPS/DUT/ALUOp \
-sim:/tb_MIPS/DUT/ALUSrc \
-sim:/tb_MIPS/DUT/b_and_z \
-sim:/tb_MIPS/DUT/Branch \
-sim:/tb_MIPS/DUT/clk \
-sim:/tb_MIPS/DUT/dMem_data \
-sim:/tb_MIPS/DUT/imdtVal \
-sim:/tb_MIPS/DUT/instruction \
-sim:/tb_MIPS/DUT/MemRead \
-sim:/tb_MIPS/DUT/MemtoReg \
-sim:/tb_MIPS/DUT/MemWrite \
-sim:/tb_MIPS/DUT/operand_B \
-sim:/tb_MIPS/DUT/PC \
-sim:/tb_MIPS/DUT/PC_4 \
-sim:/tb_MIPS/DUT/PC_branch \
-sim:/tb_MIPS/DUT/PC_next \
-sim:/tb_MIPS/DUT/regData1 \
-sim:/tb_MIPS/DUT/regData2 \
-sim:/tb_MIPS/DUT/RegDst \
-sim:/tb_MIPS/DUT/RegWrite \
-sim:/tb_MIPS/DUT/regWriteData \
-sim:/tb_MIPS/DUT/resetN \
-sim:/tb_MIPS/DUT/wrData \
-sim:/tb_MIPS/DUT/wrReg \
-sim:/tb_MIPS/DUT/zero
-# Can't move the Now cursor.
+#           Using alternate file: ./wlftd7376c
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/PC_4'.
+# Executing ONERROR command at macro ./wave.do line 8
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/PC_branch'.
+# Executing ONERROR command at macro ./wave.do line 10
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/PC_jump'.
+# Executing ONERROR command at macro ./wave.do line 12
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/instruction'.
+# Executing ONERROR command at macro ./wave.do line 15
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/imdtVal'.
+# Executing ONERROR command at macro ./wave.do line 16
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/wrReg'.
+# Executing ONERROR command at macro ./wave.do line 20
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/regData1'.
+# Executing ONERROR command at macro ./wave.do line 21
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/regData2'.
+# Executing ONERROR command at macro ./wave.do line 22
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/regWriteData'.
+# Executing ONERROR command at macro ./wave.do line 23
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/ALU_Out'.
+# Executing ONERROR command at macro ./wave.do line 29
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/zero'.
+# Executing ONERROR command at macro ./wave.do line 30
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/RegDst'.
+# Executing ONERROR command at macro ./wave.do line 33
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/Jump'.
+# Executing ONERROR command at macro ./wave.do line 34
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/Branch'.
+# Executing ONERROR command at macro ./wave.do line 35
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/MemRead'.
+# Executing ONERROR command at macro ./wave.do line 36
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/MemtoReg'.
+# Executing ONERROR command at macro ./wave.do line 37
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/ALUOp'.
+# Executing ONERROR command at macro ./wave.do line 38
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/MemWrite'.
+# Executing ONERROR command at macro ./wave.do line 39
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/ALUSrc'.
+# Executing ONERROR command at macro ./wave.do line 40
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/RegWrite'.
+# Executing ONERROR command at macro ./wave.do line 41
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/dMem_data'.
+# Executing ONERROR command at macro ./wave.do line 45
+do wave.do
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/PC_4'.
+# Executing ONERROR command at macro ./wave.do line 8
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/PC_branch'.
+# Executing ONERROR command at macro ./wave.do line 10
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/PC_jump'.
+# Executing ONERROR command at macro ./wave.do line 12
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/instruction'.
+# Executing ONERROR command at macro ./wave.do line 15
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/imdtVal'.
+# Executing ONERROR command at macro ./wave.do line 16
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/wrReg'.
+# Executing ONERROR command at macro ./wave.do line 20
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/regData1'.
+# Executing ONERROR command at macro ./wave.do line 21
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/regData2'.
+# Executing ONERROR command at macro ./wave.do line 22
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/regWriteData'.
+# Executing ONERROR command at macro ./wave.do line 23
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/ALU_Out'.
+# Executing ONERROR command at macro ./wave.do line 29
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/zero'.
+# Executing ONERROR command at macro ./wave.do line 30
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/RegDst'.
+# Executing ONERROR command at macro ./wave.do line 33
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/Jump'.
+# Executing ONERROR command at macro ./wave.do line 34
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/Branch'.
+# Executing ONERROR command at macro ./wave.do line 35
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/MemRead'.
+# Executing ONERROR command at macro ./wave.do line 36
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/MemtoReg'.
+# Executing ONERROR command at macro ./wave.do line 37
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/ALUOp'.
+# Executing ONERROR command at macro ./wave.do line 38
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/MemWrite'.
+# Executing ONERROR command at macro ./wave.do line 39
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/ALUSrc'.
+# Executing ONERROR command at macro ./wave.do line 40
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/RegWrite'.
+# Executing ONERROR command at macro ./wave.do line 41
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_MIPS/DUT/dMem_data'.
+# Executing ONERROR command at macro ./wave.do line 45
 run
 run
-add wave -position insertpoint  \
-sim:/tb_MIPS/DUT/regMem/data1 \
-sim:/tb_MIPS/DUT/regMem/data2 \
-sim:/tb_MIPS/DUT/regMem/i \
-sim:/tb_MIPS/DUT/regMem/rdReg1 \
-sim:/tb_MIPS/DUT/regMem/rdReg2 \
-sim:/tb_MIPS/DUT/regMem/regWrite \
-sim:/tb_MIPS/DUT/regMem/resetN \
-sim:/tb_MIPS/DUT/regMem/RF \
-sim:/tb_MIPS/DUT/regMem/wrData \
-sim:/tb_MIPS/DUT/regMem/wrReg
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 run
-# Compile of control.sv was successful.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.control
-run
-# Compile of MIPS_top.sv failed with 2 errors.
-# Compile of MIPS_top.sv was successful.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.MIPS
-run
-restart
-add wave -position insertpoint  \
-sim:/tb_MIPS/DUT/ALU_Out \
-sim:/tb_MIPS/DUT/ALUCtl \
-sim:/tb_MIPS/DUT/ALUOp \
-sim:/tb_MIPS/DUT/ALUSrc \
-sim:/tb_MIPS/DUT/b_and_z \
-sim:/tb_MIPS/DUT/Branch \
-sim:/tb_MIPS/DUT/clk \
-sim:/tb_MIPS/DUT/dMem_addr \
-sim:/tb_MIPS/DUT/dMem_data \
-sim:/tb_MIPS/DUT/dMem_wrData \
-sim:/tb_MIPS/DUT/funct \
-sim:/tb_MIPS/DUT/imdtVal \
-sim:/tb_MIPS/DUT/instruction \
-sim:/tb_MIPS/DUT/MemRead \
-sim:/tb_MIPS/DUT/MemtoReg \
-sim:/tb_MIPS/DUT/MemWrite \
-sim:/tb_MIPS/DUT/opCode \
-sim:/tb_MIPS/DUT/operand_A \
-sim:/tb_MIPS/DUT/operand_B \
-sim:/tb_MIPS/DUT/PC \
-sim:/tb_MIPS/DUT/PC_4 \
-sim:/tb_MIPS/DUT/PC_branch \
-sim:/tb_MIPS/DUT/PC_next \
-sim:/tb_MIPS/DUT/rdReg1 \
-sim:/tb_MIPS/DUT/rdReg2 \
-sim:/tb_MIPS/DUT/regData1 \
-sim:/tb_MIPS/DUT/regData2 \
-sim:/tb_MIPS/DUT/RegDst \
-sim:/tb_MIPS/DUT/RegWrite \
-sim:/tb_MIPS/DUT/regWriteData \
-sim:/tb_MIPS/DUT/resetN \
-sim:/tb_MIPS/DUT/wrData \
-sim:/tb_MIPS/DUT/wrReg \
-sim:/tb_MIPS/DUT/zero
-view -new wave
-# -new not supported on PE
-add wave -position insertpoint  \
-sim:/tb_MIPS/DUT/regMem/RF
-run
-run
-# Compile of control.sv was successful.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.control
-run
-# Compile of control.sv was successful.
-# Compile of MIPS_top.sv was successful.
-# 2 compiles, 0 failed with no errors.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.MIPS
-# Loading work.control
-# Warning in wave window restart: (vish-4014) No objects found matching '/tb_MIPS/DUT/wrData'. 
-run
-restart
-run
-# Compile of tb_registers.sv was successful.
-# Compile of ALU.sv was successful.
-# Compile of ALUControl.sv was successful.
-# Compile of control.sv was successful.
-# Compile of dataMemory.sv was successful.
-# Compile of instructions.sv was successful.
-# Compile of MIPS_top.sv was successful.
-# Compile of registers.sv was successful.
-# Compile of tb_ALU.sv was successful.
-# Compile of tb_ALUControl.sv was successful.
-# Compile of tb_control.sv was successful.
-# Compile of tb_dataMemory.sv was successful.
-# Compile of tb_instructions.sv was successful.
-# Compile of tb_MIPS.sv was successful.
-# 14 compiles, 0 failed with no errors.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.tb_MIPS
-# Loading work.MIPS
-# Loading work.instruction_mem
-# Loading work.control
-# Loading work.register_mem
-# Loading work.ALUControl
-# Loading work.ALU
-# Loading work.dataMemory
-run
-# Compile of ALUControl.sv was successful.
-# Compile of control.sv failed with 1 errors.
-# Compile of MIPS_top.sv was successful.
-# 3 compiles, 1 failed with 1 error.
-# Compile of control.sv was successful.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.MIPS
-# Loading work.control
-# Loading work.ALUControl
-add wave -position insertpoint  \
-sim:/tb_MIPS/DUT/ALU_Out \
-sim:/tb_MIPS/DUT/ALUCtl \
-sim:/tb_MIPS/DUT/ALUOp \
-sim:/tb_MIPS/DUT/ALUSrc \
-sim:/tb_MIPS/DUT/b_and_z \
-sim:/tb_MIPS/DUT/Branch \
-sim:/tb_MIPS/DUT/clk \
-sim:/tb_MIPS/DUT/dMem_addr \
-sim:/tb_MIPS/DUT/dMem_data \
-sim:/tb_MIPS/DUT/dMem_wrData \
-sim:/tb_MIPS/DUT/funct \
-sim:/tb_MIPS/DUT/imdtVal \
-sim:/tb_MIPS/DUT/instruction \
-sim:/tb_MIPS/DUT/Jump \
-sim:/tb_MIPS/DUT/MemRead \
-sim:/tb_MIPS/DUT/MemtoReg \
-sim:/tb_MIPS/DUT/MemWrite \
-sim:/tb_MIPS/DUT/opCode \
-sim:/tb_MIPS/DUT/operand_A \
-sim:/tb_MIPS/DUT/operand_B \
-sim:/tb_MIPS/DUT/PC \
-sim:/tb_MIPS/DUT/PC_4 \
-sim:/tb_MIPS/DUT/PC_4_branch \
-sim:/tb_MIPS/DUT/PC_branch \
-sim:/tb_MIPS/DUT/PC_jump \
-sim:/tb_MIPS/DUT/PC_next \
-sim:/tb_MIPS/DUT/rdReg1 \
-sim:/tb_MIPS/DUT/rdReg2 \
-sim:/tb_MIPS/DUT/regData1 \
-sim:/tb_MIPS/DUT/regData2 \
-sim:/tb_MIPS/DUT/RegDst \
-sim:/tb_MIPS/DUT/RegWrite \
-sim:/tb_MIPS/DUT/regWriteData \
-sim:/tb_MIPS/DUT/resetN \
-sim:/tb_MIPS/DUT/wrReg \
-sim:/tb_MIPS/DUT/zero
-run
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/Senior_Project/MIPS/ModelSim/wave.do
-# End time: 21:48:23 on Feb 22,2022, Elapsed time: 1:24:23
-# Errors: 0, Warnings: 1
