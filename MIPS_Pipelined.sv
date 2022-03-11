@@ -215,4 +215,9 @@ module MIPS_Pipelined (
 
     assign wrData = MemtoReg_WB ? dMem_data_WB : ALU_Out_WB;
 
+//----------------------------------------------------------------------------
+//  FORWARDING CONTROL
+//----------------------------------------------------------------------------
+
+
 endmodule 

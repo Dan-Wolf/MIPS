@@ -1,11 +1,4 @@
-D:/Senior_Project/MIPS/MIPS_Pipelined.sv {1 {vlog -work work -sv -stats=none D:/Senior_Project/MIPS/MIPS_Pipelined.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module MIPS_Pipelined
-
-Top level modules:
-	MIPS_Pipelined
-
-} {} {}} D:/Senior_Project/MIPS/ALU.sv {1 {vlog -work work -sv -stats=none D:/Senior_Project/MIPS/ALU.sv
+D:/Senior_Project/MIPS/ALU.sv {1 {vlog -work work -sv -stats=none D:/Senior_Project/MIPS/ALU.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module ALU
 
