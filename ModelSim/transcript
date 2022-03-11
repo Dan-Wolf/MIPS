@@ -136,3 +136,150 @@ do wave.do
 run
 run
 run
+add wave -position insertpoint  \
+sim:/tb_MIPS/DUT/ALU_Out_EX \
+sim:/tb_MIPS/DUT/ALU_Out_MEM \
+sim:/tb_MIPS/DUT/ALU_Out_WB \
+sim:/tb_MIPS/DUT/ALUCtl \
+sim:/tb_MIPS/DUT/ALUOp_EX \
+sim:/tb_MIPS/DUT/ALUOp_ID \
+sim:/tb_MIPS/DUT/ALUSrc_EX \
+sim:/tb_MIPS/DUT/ALUSrc_ID \
+sim:/tb_MIPS/DUT/b_and_z \
+sim:/tb_MIPS/DUT/Branch_EX \
+sim:/tb_MIPS/DUT/Branch_ID \
+sim:/tb_MIPS/DUT/Branch_MEM \
+sim:/tb_MIPS/DUT/clk \
+sim:/tb_MIPS/DUT/dMem_addr \
+sim:/tb_MIPS/DUT/dMem_data_MEM \
+sim:/tb_MIPS/DUT/dMem_data_WB \
+sim:/tb_MIPS/DUT/dMem_wrData \
+sim:/tb_MIPS/DUT/funct \
+sim:/tb_MIPS/DUT/imdtVal_EX \
+sim:/tb_MIPS/DUT/imdtVal_ID \
+sim:/tb_MIPS/DUT/instruction_ID \
+sim:/tb_MIPS/DUT/instruction_IF \
+sim:/tb_MIPS/DUT/Jump_EX \
+sim:/tb_MIPS/DUT/Jump_ID \
+sim:/tb_MIPS/DUT/Jump_MEM \
+sim:/tb_MIPS/DUT/MemRead_EX \
+sim:/tb_MIPS/DUT/MemRead_ID \
+sim:/tb_MIPS/DUT/MemRead_MEM \
+sim:/tb_MIPS/DUT/MemtoReg_EX \
+sim:/tb_MIPS/DUT/MemtoReg_ID \
+sim:/tb_MIPS/DUT/MemtoReg_MEM \
+sim:/tb_MIPS/DUT/MemtoReg_WB \
+sim:/tb_MIPS/DUT/MemWrite_EX \
+sim:/tb_MIPS/DUT/MemWrite_ID \
+sim:/tb_MIPS/DUT/MemWrite_MEM \
+sim:/tb_MIPS/DUT/opCode \
+sim:/tb_MIPS/DUT/operand_A \
+sim:/tb_MIPS/DUT/operand_B \
+sim:/tb_MIPS/DUT/PC \
+sim:/tb_MIPS/DUT/PC_4_branch \
+sim:/tb_MIPS/DUT/PC_4_EX \
+sim:/tb_MIPS/DUT/PC_4_ID \
+sim:/tb_MIPS/DUT/PC_4_IF \
+sim:/tb_MIPS/DUT/PC_branch_EX \
+sim:/tb_MIPS/DUT/PC_branch_MEM \
+sim:/tb_MIPS/DUT/PC_jump_EX \
+sim:/tb_MIPS/DUT/PC_jump_ID \
+sim:/tb_MIPS/DUT/PC_jump_MEM \
+sim:/tb_MIPS/DUT/PC_next \
+sim:/tb_MIPS/DUT/RD_EX \
+sim:/tb_MIPS/DUT/RD_ID \
+sim:/tb_MIPS/DUT/rdReg1 \
+sim:/tb_MIPS/DUT/rdReg2 \
+sim:/tb_MIPS/DUT/regData1_EX \
+sim:/tb_MIPS/DUT/regData1_ID \
+sim:/tb_MIPS/DUT/regData2_EX \
+sim:/tb_MIPS/DUT/regData2_ID \
+sim:/tb_MIPS/DUT/regData2_MEM \
+sim:/tb_MIPS/DUT/RegDst_EX \
+sim:/tb_MIPS/DUT/RegDst_ID \
+sim:/tb_MIPS/DUT/RegWrite_EX \
+sim:/tb_MIPS/DUT/RegWrite_ID \
+sim:/tb_MIPS/DUT/RegWrite_MEM \
+sim:/tb_MIPS/DUT/RegWrite_WB \
+sim:/tb_MIPS/DUT/resetN \
+sim:/tb_MIPS/DUT/RT_EX \
+sim:/tb_MIPS/DUT/RT_ID \
+sim:/tb_MIPS/DUT/wrData \
+sim:/tb_MIPS/DUT/wrReg_EX \
+sim:/tb_MIPS/DUT/wrReg_MEM \
+sim:/tb_MIPS/DUT/wrReg_WB \
+sim:/tb_MIPS/DUT/zero_EX \
+sim:/tb_MIPS/DUT/zero_MEM
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (140) does not match connection size (71) for port 'data_in'. The port definition is at: D:/Senior_Project/MIPS/pipeline_reg.sv(7).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_MIPS/DUT/MEM_WB_reg File: D:/Senior_Project/MIPS/MIPS_Pipelined.sv Line: 205
+# ** Warning: (vsim-3015) [PCDPC] - Port size (140) does not match connection size (71) for port 'data_out'. The port definition is at: D:/Senior_Project/MIPS/pipeline_reg.sv(8).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_MIPS/DUT/MEM_WB_reg File: D:/Senior_Project/MIPS/MIPS_Pipelined.sv Line: 205
+run
+
+run
+run
+run
+run
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (140) does not match connection size (71) for port 'data_in'. The port definition is at: D:/Senior_Project/MIPS/pipeline_reg.sv(7).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_MIPS/DUT/MEM_WB_reg File: D:/Senior_Project/MIPS/MIPS_Pipelined.sv Line: 205
+# ** Warning: (vsim-3015) [PCDPC] - Port size (140) does not match connection size (71) for port 'data_out'. The port definition is at: D:/Senior_Project/MIPS/pipeline_reg.sv(8).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_MIPS/DUT/MEM_WB_reg File: D:/Senior_Project/MIPS/MIPS_Pipelined.sv Line: 205
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+step -out -current
+# ** UI-Msg: (vsim-12081) The specified scope, sim:/tb_MIPS, is not a process or thread.
+# 
+step -out -current
+# ** UI-Msg: (vsim-12081) The specified scope, sim:/tb_MIPS, is not a process or thread.
+# 
+run
+run
+step
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (140) does not match connection size (71) for port 'data_in'. The port definition is at: D:/Senior_Project/MIPS/pipeline_reg.sv(7).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_MIPS/DUT/MEM_WB_reg File: D:/Senior_Project/MIPS/MIPS_Pipelined.sv Line: 205
+# ** Warning: (vsim-3015) [PCDPC] - Port size (140) does not match connection size (71) for port 'data_out'. The port definition is at: D:/Senior_Project/MIPS/pipeline_reg.sv(8).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_MIPS/DUT/MEM_WB_reg File: D:/Senior_Project/MIPS/MIPS_Pipelined.sv Line: 205
+run
+run
+run
+run
+run
+# Compile of instructions.sv was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.instruction_mem
+# ** Warning: (vsim-3015) [PCDPC] - Port size (140) does not match connection size (71) for port 'data_in'. The port definition is at: D:/Senior_Project/MIPS/pipeline_reg.sv(7).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_MIPS/DUT/MEM_WB_reg File: D:/Senior_Project/MIPS/MIPS_Pipelined.sv Line: 205
+# ** Warning: (vsim-3015) [PCDPC] - Port size (140) does not match connection size (71) for port 'data_out'. The port definition is at: D:/Senior_Project/MIPS/pipeline_reg.sv(8).
+#    Time: 0 ns  Iteration: 0  Instance: /tb_MIPS/DUT/MEM_WB_reg File: D:/Senior_Project/MIPS/MIPS_Pipelined.sv Line: 205
+run
+run
+run

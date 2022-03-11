@@ -40,13 +40,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	tb_ALUControl
 
-} {} {}} D:/Senior_Project/MIPS/registers.sv {1 {vlog -work work -sv -stats=none D:/Senior_Project/MIPS/registers.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module register_mem
-
-Top level modules:
-	register_mem
-
 } {} {}} D:/Senior_Project/MIPS/control.sv {1 {vlog -work work -sv -stats=none D:/Senior_Project/MIPS/control.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module control
@@ -74,13 +67,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	MIPS
-
-} {} {}} D:/Senior_Project/MIPS/dataMemory.sv {1 {vlog -work work -sv -stats=none D:/Senior_Project/MIPS/dataMemory.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module dataMemory
-
-Top level modules:
-	dataMemory
 
 } {} {}} D:/Senior_Project/MIPS/ALUControl.sv {1 {vlog -work work -sv -stats=none D:/Senior_Project/MIPS/ALUControl.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
