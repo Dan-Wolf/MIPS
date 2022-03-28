@@ -9,6 +9,7 @@ Description:    This module receives the opcode from the instruction and
 module control (
     input   logic   [5:0]   opCode,
     input   logic           resetN,
+    input   logic           flush,
     output  logic           RegDst,
     output  logic           Jump,
     output  logic           Branch, 
@@ -21,7 +22,7 @@ module control (
 );
 
 always_comb begin 
-    if (~resetN) begin 
+    if (~resetN | flush) begin 
         RegDst      =   1'b0;
         Jump        =   1'b0;
         Branch      =   1'b0;  

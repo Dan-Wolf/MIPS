@@ -16,13 +16,17 @@ module MIPS_Pipelined (
 );
 
     logic [31:0] PC, PC_4_IF, PC_next;
+    logic        PC_Write_En;
     assign PC_4_IF = (resetN) ? PC + 32'h0000_0004 : 32'h0000_0000;
 
     always @(posedge clk or negedge resetN) begin 
         if (~resetN) 
             PC <= 32'b0;
         else 
-            PC <= PC_next;
+            if (PC_Write_En)
+                PC <= PC_next;
+            else 
+                PC <= PC;
     end 
 
 //----------------------------------------------------------------------------
@@ -32,6 +36,7 @@ module MIPS_Pipelined (
     // Instruction Memory
     logic   [31:0]  instruction_IF, instruction_ID;
     logic   [31:0]  PC_4_ID;
+    logic           IF_ID_Write;
 
     instruction_mem inst_mem(
         .PC             (PC),
@@ -43,6 +48,8 @@ module MIPS_Pipelined (
     pipeline_reg #(64) IF_ID_reg (
         .clk        (clk),
         .resetN     (resetN),
+        .enable     (IF_ID_Write),
+        .flush      (),
         .data_in    ({PC_4_IF, instruction_IF}),
         .data_out   ({PC_4_ID, instruction_ID})
     );
@@ -50,6 +57,20 @@ module MIPS_Pipelined (
 //----------------------------------------------------------------------------
 //  ID 
 //----------------------------------------------------------------------------
+
+    // Hazard Detection Unit 
+    logic [4:0] RT_EX, RS_ID, RT_ID;
+    logic       MemRead_EX, Flush_Control;
+
+    hazard_detection_unit hazard_detection_unit_0 (
+        .RT_EX          (RT_EX),
+        .RS_ID          (RS_ID),
+        .RT_ID          (RT_ID),
+        .MemRead_EX     (MemRead_EX),
+        .PC_Write_En    (PC_Write_En),
+        .IF_ID_Write    (IF_ID_Write),
+        .Flush_Control  (Flush_Control) 
+    );
 
     // Control Unit
     wire            RegDst_ID, Jump_ID, Branch_ID, MemRead_ID, MemtoReg_ID, MemWrite_ID, ALUSrc_ID, RegWrite_ID;
@@ -61,6 +82,7 @@ module MIPS_Pipelined (
     control control_0(
         .opCode       (opCode),
         .resetN       (resetN),
+        .flush        (Flush_Control),
         .RegDst       (RegDst_ID),
         .Jump         (Jump_ID),
         .Branch       (Branch_ID),
@@ -97,9 +119,10 @@ module MIPS_Pipelined (
     assign imdtVal_ID = {{16{instruction_ID[15]}}, instruction_ID[15:0]};
 
     // Pass RT and RD to next stage
-    logic   [4:0] RT_ID, RD_ID;
+    logic   [4:0] RD_ID;
     assign RT_ID = instruction_ID[20:16];
     assign RD_ID = instruction_ID[15:11];
+    assign RS_ID = instruction_ID[25:21];
 
     // PC Jump
     logic [31:0]    PC_jump_ID;
@@ -108,15 +131,17 @@ module MIPS_Pipelined (
 
     // ID/EX Register
     logic [31:0]    PC_4_EX, PC_jump_EX, regData1_EX, regData2_EX, imdtVal_EX;
-    logic [4:0]     RT_EX, RD_EX;
+    logic [4:0]     RD_EX, RS_EX;
     logic [1:0]     ALUOp_EX;
-    logic           RegDst_EX, Jump_EX, Branch_EX, MemRead_EX, MemtoReg_EX, MemWrite_EX, ALUSrc_EX, RegWrite_EX;
+    logic           RegDst_EX, Jump_EX, Branch_EX, MemtoReg_EX, MemWrite_EX, ALUSrc_EX, RegWrite_EX;
 
-    pipeline_reg #(180) ID_EX_reg (
+    pipeline_reg #(212) ID_EX_reg (
         .clk        (clk),
         .resetN     (resetN),
-        .data_in    ({PC_4_ID, PC_jump_ID, regData1_ID, regData2_ID, imdtVal_ID, RT_ID, RD_ID, RegDst_ID, Jump_ID, Branch_ID, MemRead_ID, MemtoReg_ID, MemWrite_ID, ALUSrc_ID, RegWrite_ID, ALUOp_ID}),
-        .data_out   ({PC_4_EX, PC_jump_EX, regData1_EX, regData2_EX, imdtVal_EX, RT_EX, RD_EX, RegDst_EX, Jump_EX, Branch_EX, MemRead_EX, MemtoReg_EX, MemWrite_EX, ALUSrc_EX, RegWrite_EX, ALUOp_EX})
+        .enable     (1'b1),
+        .flush      (1'b0),
+        .data_in    ({PC_4_ID, PC_jump_ID, regData1_ID, regData2_ID, imdtVal_ID, RT_ID, RD_ID, RS_ID, RegDst_ID, Jump_ID, Branch_ID, MemRead_ID, MemtoReg_ID, MemWrite_ID, ALUSrc_ID, RegWrite_ID, ALUOp_ID}),
+        .data_out   ({PC_4_EX, PC_jump_EX, regData1_EX, regData2_EX, imdtVal_EX, RT_EX, RD_EX, RS_EX, RegDst_EX, Jump_EX, Branch_EX, MemRead_EX, MemtoReg_EX, MemWrite_EX, ALUSrc_EX, RegWrite_EX, ALUOp_EX})
     );
 
 //----------------------------------------------------------------------------
@@ -135,12 +160,34 @@ module MIPS_Pipelined (
         .ALUCtl  (ALUCtl)
     );
 
+    // Forwarding MUXs
+    logic [31:0] forwarding_A_out, forwarding_B_out, ALU_Out_MEM;
+    logic [1:0]  Forward_A, Forward_B;
+
+    four_to_one_MUX forwarding_MUX_A (
+        .data_in0   (regData1_EX),
+        .data_in1   (wrData),
+        .data_in2   (ALU_Out_MEM),
+        .data_in3   (32'b0),
+        .select     (Forward_A),
+        .data_out   (forwarding_A_out)
+    );
+
+    four_to_one_MUX forwarding_MUX_B (
+        .data_in0   (regData2_EX),
+        .data_in1   (wrData),
+        .data_in2   (ALU_Out_MEM),
+        .data_in3   (32'b0),
+        .select     (Forward_B),
+        .data_out   (forwarding_B_out)
+    );
+
     // ALU
     logic           zero_EX;
     logic   [31:0]  operand_A, operand_B, ALU_Out_EX;
 
-    assign operand_A = regData1_EX;
-    assign operand_B = ALUSrc_EX ? imdtVal_EX : regData2_EX;
+    assign operand_A = forwarding_A_out;
+    assign operand_B = ALUSrc_EX ? imdtVal_EX : forwarding_B_out;
 
     ALU alu(
         .A      (operand_A),
@@ -159,13 +206,15 @@ module MIPS_Pipelined (
     assign wrReg_EX = RegDst_EX ? RD_EX : RT_EX;
 
     // EX/MEM Register
-    logic [31:0]    PC_branch_MEM, PC_jump_MEM, ALU_Out_MEM, regData2_MEM;
+    logic [31:0]    PC_branch_MEM, PC_jump_MEM, regData2_MEM;
     logic [4:0]     wrReg_MEM;
     logic           zero_MEM, Jump_MEM, Branch_MEM, MemRead_MEM, MemtoReg_MEM, MemWrite_MEM, RegWrite_MEM;
 
     pipeline_reg #(140) EX_MEM_reg (
         .clk        (clk),
         .resetN     (resetN),
+        .enable     (1'b1),
+        .flush      (1'b0),
         .data_in    ({PC_branch_EX, PC_jump_EX, ALU_Out_EX, zero_EX, regData2_EX, wrReg_EX, Jump_EX, Branch_EX, MemRead_EX, MemtoReg_EX, MemWrite_EX, RegWrite_EX}),
         .data_out   ({PC_branch_MEM, PC_jump_MEM, ALU_Out_MEM, zero_MEM, regData2_MEM, wrReg_MEM, Jump_MEM, Branch_MEM, MemRead_MEM, MemtoReg_MEM, MemWrite_MEM, RegWrite_MEM})
     );
@@ -205,6 +254,8 @@ module MIPS_Pipelined (
     pipeline_reg #(140) MEM_WB_reg (
         .clk        (clk),
         .resetN     (resetN),
+        .enable     (1'b1),
+        .flush      (1'b0),
         .data_in    ({dMem_data_MEM, ALU_Out_MEM, wrReg_MEM, MemtoReg_MEM, RegWrite_MEM}),
         .data_out   ({dMem_data_WB, ALU_Out_WB, wrReg_WB, MemtoReg_WB, RegWrite_WB})
     );
@@ -219,5 +270,15 @@ module MIPS_Pipelined (
 //  FORWARDING CONTROL
 //----------------------------------------------------------------------------
 
+forwarding_unit forwarding_unit_0 (
+    .RegWrite_MEM       (RegWrite_MEM),
+    .RegWrite_WB        (RegWrite_WB),
+    .wrReg_MEM          (wrReg_MEM),
+    .wrReg_WB           (wrReg_WB),
+    .RS_EX              (RS_EX),
+    .RT_EX              (RT_EX),
+    .Forward_A          (Forward_A),
+    .Forward_B          (Forward_B)
+);
 
 endmodule 

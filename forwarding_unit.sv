@@ -13,8 +13,8 @@ logic   MEM_A, MEM_B, WB_A, WB_B;
 assign MEM_A = (RegWrite_MEM) & (wrReg_MEM != 5'b00000) & (wrReg_MEM == RS_EX);
 assign MEM_B = (RegWrite_MEM) & (wrReg_MEM != 5'b00000) & (wrReg_MEM == RT_EX);
 
-assign WB_A = (RegWrite_WB) & (wrReg_WB != 5'b00000) & (!(RegWrite_MEM & (wrReg_MEM != 5'b00000) & (wrREg_MEM != RS_EX))) & (wrReg_WB == RS_EX);
-assign WB_B = (RegWrite_WB) & (wrReg_WB != 5'b00000) & (!(RegWrite_MEM & (wrReg_MEM != 5'b00000) & (wrREg_MEM != RT_EX))) & (wrReg_WB == RT_EX);
+assign WB_A = (RegWrite_WB) & (wrReg_WB != 5'b00000) & (!(RegWrite_MEM & (wrReg_MEM != 5'b00000) & (wrReg_MEM != RS_EX))) & (wrReg_WB == RS_EX);
+assign WB_B = (RegWrite_WB) & (wrReg_WB != 5'b00000) & (!(RegWrite_MEM & (wrReg_MEM != 5'b00000) & (wrReg_MEM != RT_EX))) & (wrReg_WB == RT_EX);
 
 always_comb begin 
     case ({MEM_A, WB_A})  
