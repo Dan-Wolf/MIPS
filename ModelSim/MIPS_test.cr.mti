@@ -82,19 +82,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	tb_control
 
-} {} {}} E:/Senior_Project/MIPS/four_to_one_MUX.sv {1 {vlog -work work -sv -stats=none E:/Senior_Project/MIPS/four_to_one_MUX.sv
+} {} {}} E:/Senior_Project/MIPS/registers.sv {1 {vlog -work work -sv -stats=none E:/Senior_Project/MIPS/registers.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module four_to_one_MUX
+-- Compiling module register_mem
 
 Top level modules:
-	four_to_one_MUX
-
-} {} {}} E:/Senior_Project/MIPS/tb_dataMemory.sv {1 {vlog -work work -sv -stats=none E:/Senior_Project/MIPS/tb_dataMemory.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module tb_dataMemory
-
-Top level modules:
-	tb_dataMemory
+	register_mem
 
 } {} {}} E:/Senior_Project/MIPS/tb_ALUControl.sv {1 {vlog -work work -sv -stats=none E:/Senior_Project/MIPS/tb_ALUControl.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -103,12 +96,19 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	tb_ALUControl
 
-} {} {}} E:/Senior_Project/MIPS/registers.sv {1 {vlog -work work -sv -stats=none E:/Senior_Project/MIPS/registers.sv
+} {} {}} E:/Senior_Project/MIPS/tb_dataMemory.sv {1 {vlog -work work -sv -stats=none E:/Senior_Project/MIPS/tb_dataMemory.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module register_mem
+-- Compiling module tb_dataMemory
 
 Top level modules:
-	register_mem
+	tb_dataMemory
+
+} {} {}} E:/Senior_Project/MIPS/four_to_one_MUX.sv {1 {vlog -work work -sv -stats=none E:/Senior_Project/MIPS/four_to_one_MUX.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module four_to_one_MUX
+
+Top level modules:
+	four_to_one_MUX
 
 } {} {}} E:/Senior_Project/MIPS/control.sv {1 {vlog -work work -sv -stats=none E:/Senior_Project/MIPS/control.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -116,6 +116,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 
 Top level modules:
 	control
+
+} {} {}} E:/Senior_Project/MIPS/MIPS_Pipelined.sv {1 {vlog -work work -sv -stats=none E:/Senior_Project/MIPS/MIPS_Pipelined.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module MIPS_Pipelined
+
+Top level modules:
+	MIPS_Pipelined
 
 } {} {}} E:/Senior_Project/MIPS/tb_instructions.sv {1 {vlog -work work -sv -stats=none E:/Senior_Project/MIPS/tb_instructions.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
