@@ -1,9 +1,6 @@
 addi s1 zero 0000000000000001
 addi s2 zero 0000000000000010
-nop
-nop
-nop
-nop
-nop
-nop
-add t0 s1 s2
+beq s1 s2 0000000000000101
+beq s1 s1 1111111111111100
+add s3 s1 s2
+addi t0 zero 0000000000000011
