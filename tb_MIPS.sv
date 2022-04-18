@@ -20,7 +20,7 @@ MIPS_Pipelined DUT(.*);
 initial begin 
     clk = 1'b0;
     resetN = 1'b0;
-    #20 resetN = 1'b1;
+    #5 resetN = 1'b1;
 end 
 
 endmodule 

@@ -5,39 +5,42 @@ IF/ID (64b)
 32b PC + 4
 
 
-ID/EX (116)
-32b Read_Data_1
-32b Read_Data_2
-32b sign_extended immd val 
-5b instruction[20:16]
-5b instruction[15:11] 
-1b RegDest
-1b Jump
-1b Branch
-1b MemRead
-1b MemtoReg
-1b MemWrite
-1b ALUSrc
-1b RegWrite 
-2b ALUOp
+ID/EX (180)
+32b PC_4                    *
+32b PC_Jump                 *
+32b Read_Data_1             *
+32b Read_Data_2             *
+32b sign_extended immd val  *
+5b instruction[20:16]       *
+5b instruction[15:11]       *
+1b RegDest                  *        
+1b Jump                     *
+1b Branch                   *
+1b MemRead                  *
+1b MemtoReg                 *
+1b MemWrite                 * 
+1b ALUSrc                   *
+1b RegWrite                 *
+2b ALUOp                    *
 
-EX/MEM (108)
-32b PC_Branch
-32b ALU_Result
-1b ALU_Zero_Flag
-32b Read_Data_2
-5b WB_Reg
-1b Jump
-1b Branch
-1b MemRead
-1b MemtoReg
-1b MemWrite
-1b RegWrite 
+EX/MEM (140)
+PC_Jump             *
+32b PC_Branch       *
+32b ALU_Result      *
+1b ALU_Zero_Flag    *
+32b Read_Data_2     *
+5b WB_Reg           *      
+1b Jump             *
+1b Branch           *
+1b MemRead          *
+1b MemtoReg         *
+1b MemWrite         *
+1b RegWrite         *
 
 
 MEM/WB (71)
-32b dataMem_Read_Data
-32b ALU_Result
-5b WB_Reg
-1b MemtoReg
-1b RegWrite 
+32b dataMem_Read_Data   *
+32b ALU_Result          *
+5b WB_Reg               *
+1b MemtoReg             *
+1b RegWrite             *

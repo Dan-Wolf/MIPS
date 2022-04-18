@@ -20,8 +20,10 @@ input   wire    [WIDTH-1:0] data_in;
 output  logic   [WIDTH-1:0] data_out;
 
 always @(posedge clk or negedge resetN) begin 
-    if (~resetN | flush) 
+    if (~resetN) 
         data_out <= '0;
+	else if (flush)
+			data_out <= '0;
     else 
         if (enable)
             data_out <= data_in;
