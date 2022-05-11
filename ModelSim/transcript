@@ -1,211 +1,26 @@
-# 0 compiles, 19 failed with no errors.
-# Compile of ALU.sv was successful.
-# Compile of ALUControl.sv was successful.
-# Compile of control.sv was successful.
-# Compile of dataMemory.sv was successful.
 # Compile of forwarding_unit.sv was successful.
-# Compile of four_to_one_MUX.sv was successful.
-# Compile of hazard_detection_unit.sv was successful.
-# Compile of instructions.sv was successful.
-# Compile of MIPS_Pipelined.sv was successful.
-# Compile of MIPS_top.sv was successful.
-# Compile of pipeline_reg.sv was successful.
-# Compile of registers.sv was successful.
+# Compile of ALU.sv was successful.
 # Compile of tb_ALU.sv was successful.
-# Compile of tb_ALUControl.sv was successful.
-# Compile of tb_control.sv was successful.
-# Compile of tb_dataMemory.sv was successful.
-# Compile of tb_instructions.sv was successful.
-# Compile of tb_MIPS.sv was successful.
-# Compile of tb_registers.sv was successful.
-# 19 compiles, 0 failed with no errors.
-# Compile of instructions.sv was successful.
-vsim -gui work.tb_MIPS
-# vsim -gui work.tb_MIPS 
-# Start time: 21:08:01 on Apr 17,2022
+# Load canceled
+vsim -gui work.tb_MIPSALU
+# vsim -gui work.tb_MIPSALU 
+# Start time: 20:54:12 on Apr 19,2022
 # Loading sv_std.std
-# Loading work.tb_MIPS
-# Loading work.MIPS_Pipelined
-# Loading work.instruction_mem
-# Loading work.pipeline_reg
-# Loading work.hazard_detection_unit
-# Loading work.control
-# Loading work.register_mem
-# Loading work.ALUControl
-# Loading work.four_to_one_MUX
+# Loading work.tb_MIPSALU
 # Loading work.ALU
-# Loading work.dataMemory
-# Loading work.forwarding_unit
-run
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 add wave -position insertpoint  \
-sim:/tb_MIPS/DUT/ALU_Out_EX \
-sim:/tb_MIPS/DUT/ALU_Out_MEM \
-sim:/tb_MIPS/DUT/ALU_Out_WB \
-sim:/tb_MIPS/DUT/ALUCtl \
-sim:/tb_MIPS/DUT/ALUOp_EX \
-sim:/tb_MIPS/DUT/ALUOp_ID \
-sim:/tb_MIPS/DUT/ALUSrc_EX \
-sim:/tb_MIPS/DUT/ALUSrc_ID \
-sim:/tb_MIPS/DUT/b_and_z \
-sim:/tb_MIPS/DUT/Branch_EX \
-sim:/tb_MIPS/DUT/Branch_ID \
-sim:/tb_MIPS/DUT/Branch_MEM \
-sim:/tb_MIPS/DUT/clk \
-sim:/tb_MIPS/DUT/dMem_addr \
-sim:/tb_MIPS/DUT/dMem_data_MEM \
-sim:/tb_MIPS/DUT/dMem_data_WB \
-sim:/tb_MIPS/DUT/dMem_wrData \
-sim:/tb_MIPS/DUT/EX_MEM_Flush \
-sim:/tb_MIPS/DUT/Flush_Control \
-sim:/tb_MIPS/DUT/Forward_A \
-sim:/tb_MIPS/DUT/Forward_B \
-sim:/tb_MIPS/DUT/forwarding_A_out \
-sim:/tb_MIPS/DUT/forwarding_B_out \
-sim:/tb_MIPS/DUT/funct \
-sim:/tb_MIPS/DUT/ID_EX_Flush \
-sim:/tb_MIPS/DUT/IF_ID_Flush \
-sim:/tb_MIPS/DUT/IF_ID_Write \
-sim:/tb_MIPS/DUT/imdtVal_EX \
-sim:/tb_MIPS/DUT/imdtVal_ID \
-sim:/tb_MIPS/DUT/instruction_ID \
-sim:/tb_MIPS/DUT/instruction_IF \
-sim:/tb_MIPS/DUT/Jump_EX \
-sim:/tb_MIPS/DUT/Jump_ID \
-sim:/tb_MIPS/DUT/Jump_MEM \
-sim:/tb_MIPS/DUT/MemRead_EX \
-sim:/tb_MIPS/DUT/MemRead_ID \
-sim:/tb_MIPS/DUT/MemRead_MEM \
-sim:/tb_MIPS/DUT/MemtoReg_EX \
-sim:/tb_MIPS/DUT/MemtoReg_ID \
-sim:/tb_MIPS/DUT/MemtoReg_MEM \
-sim:/tb_MIPS/DUT/MemtoReg_WB \
-sim:/tb_MIPS/DUT/MemWrite_EX \
-sim:/tb_MIPS/DUT/MemWrite_ID \
-sim:/tb_MIPS/DUT/MemWrite_MEM \
-sim:/tb_MIPS/DUT/opCode \
-sim:/tb_MIPS/DUT/operand_A \
-sim:/tb_MIPS/DUT/operand_B \
-sim:/tb_MIPS/DUT/PC \
-sim:/tb_MIPS/DUT/PC_4_branch \
-sim:/tb_MIPS/DUT/PC_4_EX \
-sim:/tb_MIPS/DUT/PC_4_ID \
-sim:/tb_MIPS/DUT/PC_4_IF \
-sim:/tb_MIPS/DUT/PC_branch_EX \
-sim:/tb_MIPS/DUT/PC_branch_MEM \
-sim:/tb_MIPS/DUT/PC_jump_EX \
-sim:/tb_MIPS/DUT/PC_jump_ID \
-sim:/tb_MIPS/DUT/PC_jump_MEM \
-sim:/tb_MIPS/DUT/PC_next \
-sim:/tb_MIPS/DUT/PC_Write_En \
-sim:/tb_MIPS/DUT/RD_EX \
-sim:/tb_MIPS/DUT/RD_ID \
-sim:/tb_MIPS/DUT/rdReg1 \
-sim:/tb_MIPS/DUT/rdReg2 \
-sim:/tb_MIPS/DUT/regData1_EX \
-sim:/tb_MIPS/DUT/regData1_ID \
-sim:/tb_MIPS/DUT/regData2_EX \
-sim:/tb_MIPS/DUT/regData2_ID \
-sim:/tb_MIPS/DUT/regData2_MEM \
-sim:/tb_MIPS/DUT/RegDst_EX \
-sim:/tb_MIPS/DUT/RegDst_ID \
-sim:/tb_MIPS/DUT/RegWrite_EX \
-sim:/tb_MIPS/DUT/RegWrite_ID \
-sim:/tb_MIPS/DUT/RegWrite_MEM \
-sim:/tb_MIPS/DUT/RegWrite_WB \
-sim:/tb_MIPS/DUT/resetN \
-sim:/tb_MIPS/DUT/RS_EX \
-sim:/tb_MIPS/DUT/RS_ID \
-sim:/tb_MIPS/DUT/RT_EX \
-sim:/tb_MIPS/DUT/RT_ID \
-sim:/tb_MIPS/DUT/wrData \
-sim:/tb_MIPS/DUT/wrReg_EX \
-sim:/tb_MIPS/DUT/wrReg_MEM \
-sim:/tb_MIPS/DUT/wrReg_WB \
-sim:/tb_MIPS/DUT/zero_EX \
-sim:/tb_MIPS/DUT/zero_MEM
+sim:/tb_MIPSALU/A \
+sim:/tb_MIPSALU/ALU_Out \
+sim:/tb_MIPSALU/B \
+sim:/tb_MIPSALU/opCode \
+sim:/tb_MIPSALU/zero
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: danwo  Hostname: DESKTOP-PFIKTDD  ProcessID: 32896
-#           Attempting to use alternate WLF file "./wlftes6x4h".
+#           Attempting to use alternate WLF file "./wlft8y1mmk".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftes6x4h
-run
-run
-# Can't move the Now cursor.
-# Compile of instructions.sv was successful.
+#           Using alternate file: ./wlft8y1mmk
+# Compile of tb_ALU.sv was successful.
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.instruction_mem
-run
-run
-run
-# Compile of instructions.sv was successful.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.instruction_mem
-run
-run
-run
-# Compile of instructions.sv was successful.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.instruction_mem
-run
-run
-run
-# Compile of instructions.sv was successful.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.instruction_mem
-run
-run
-run
-# Compile of instructions.sv was successful.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.instruction_mem
-run
-run
-run
-# Compile of instructions.sv was successful.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.instruction_mem
-run
-run
-# Compile of tb_MIPS.sv was successful.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.tb_MIPS
-run
-# Compile of tb_MIPS.sv was successful.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.tb_MIPS
-run
-run
-view -new wave
-# -new not supported on PE
-add wave -position insertpoint  \
-sim:/tb_MIPS/DUT/forwarding_unit_0/Forward_A \
-sim:/tb_MIPS/DUT/forwarding_unit_0/Forward_B \
-sim:/tb_MIPS/DUT/forwarding_unit_0/MEM_A \
-sim:/tb_MIPS/DUT/forwarding_unit_0/MEM_B \
-sim:/tb_MIPS/DUT/forwarding_unit_0/RegWrite_MEM \
-sim:/tb_MIPS/DUT/forwarding_unit_0/RegWrite_WB \
-sim:/tb_MIPS/DUT/forwarding_unit_0/RS_EX \
-sim:/tb_MIPS/DUT/forwarding_unit_0/RT_EX \
-sim:/tb_MIPS/DUT/forwarding_unit_0/WB_A \
-sim:/tb_MIPS/DUT/forwarding_unit_0/WB_B \
-sim:/tb_MIPS/DUT/forwarding_unit_0/wrReg_MEM \
-sim:/tb_MIPS/DUT/forwarding_unit_0/wrReg_WB
-restart
-run
-run
-# Compile of forwarding_unit.sv was successful.
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.forwarding_unit
-run
+# Loading work.tb_MIPSALU
 run

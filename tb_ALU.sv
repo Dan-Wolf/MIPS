@@ -18,12 +18,12 @@ logic           zero;
 ALU     DUT(.*);
 
 initial begin 
-        A   <= 32'h0000_0007;
-        B   <= 32'H0000_000A;
+        A   <= 32'd1000;
+        B   <= 32'd200;
         opCode  <= 4'b0010;
-    #10 opCode  <= 4'b0000;
-    #10 A   <= 32'h0000_000A;
-        opCode  <= 4'b0100;
+    #10 opCode  <= 4'b0110;
+    #10 B   <= 32'd2000;
+    #10 B   <= 32'd1000;
 end
 
 endmodule 

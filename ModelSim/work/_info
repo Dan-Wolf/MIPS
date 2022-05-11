@@ -11,7 +11,7 @@ cModel Technology
 dC:/intelFPGA_lite/20.1
 vALU
 Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-!s110 1650243832
+!s110 1650414882
 !i10b 1
 !s100 7T2NT;ED`<1=AA6WJTodN1
 Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -19,25 +19,25 @@ IN>ZhQY0Yhkh>TR1:kEN623
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 S1
 Z3 dD:/Senior_Project/MIPS/ModelSim
-w1646081484
+w1650414794
 8D:/Senior_Project/MIPS/ALU.sv
 FD:/Senior_Project/MIPS/ALU.sv
-!i122 0
+!i122 30
 L0 11 22
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1650243832.000000
+!s108 1650414882.000000
 !s107 D:/Senior_Project/MIPS/ALU.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/ALU.sv|
 !i113 1
-Z6 o-work work -sv
-Z7 tCvgOpt 0
+Z5 o-work work -sv
+Z6 tCvgOpt 0
 n@a@l@u
 vALUControl
 R0
-Z8 !s110 1650243833
+Z7 !s110 1650243833
 !i10b 1
 !s100 @[^8KK^P>IB:WlG9fgh:=0
 R1
@@ -54,16 +54,16 @@ R4
 r1
 !s85 0
 31
-R5
+!s108 1650243832.000000
 !s107 D:/Senior_Project/MIPS/ALUControl.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/ALUControl.sv|
 !i113 1
+R5
 R6
-R7
 n@a@l@u@control
 vcontrol
 R0
-R8
+R7
 !i10b 1
 !s100 m`R>Hfl?C]`WCRMc8XOOQ0
 R1
@@ -80,12 +80,12 @@ R4
 r1
 !s85 0
 31
-Z9 !s108 1650243833.000000
+Z8 !s108 1650243833.000000
 !s107 D:/Senior_Project/MIPS/control.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/control.sv|
 !i113 1
+R5
 R6
-R7
 vdataMemory
 R0
 !s110 1650243834
@@ -105,41 +105,41 @@ R4
 r1
 !s85 0
 31
-R9
+R8
 !s107 D:/Senior_Project/MIPS/dataMemory.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/dataMemory.sv|
 !i113 1
+R5
 R6
-R7
 ndata@memory
 vforwarding_unit
 R0
-!s110 1650248777
+!s110 1650414877
 !i10b 1
-!s100 OQ60PYeOb[Xl[M;NMi<`H3
+!s100 ^2ln2kR>hXV:aeUKWUfB@1
 R1
-Id5BSkJN0;X];OH`6JSgHG1
+IP4R@Jam]MEa6L0I]?<IZl0
 R2
 S1
 R3
-w1650248770
+w1650248854
 8D:/Senior_Project/MIPS/forwarding_unit.sv
 FD:/Senior_Project/MIPS/forwarding_unit.sv
-!i122 28
-L0 5 35
+!i122 29
+L0 5 33
 R4
 r1
 !s85 0
 31
-!s108 1650248777.000000
+!s108 1650414877.000000
 !s107 D:/Senior_Project/MIPS/forwarding_unit.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/forwarding_unit.sv|
 !i113 1
+R5
 R6
-R7
 vfour_to_one_MUX
 R0
-Z10 !s110 1650243835
+Z9 !s110 1650243835
 !i10b 1
 !s100 iMWHCl[6M4fOU<N2n>cX:2
 R1
@@ -156,16 +156,16 @@ R4
 r1
 !s85 0
 31
-Z11 !s108 1650243835.000000
+Z10 !s108 1650243835.000000
 !s107 D:/Senior_Project/MIPS/four_to_one_MUX.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/four_to_one_MUX.sv|
 !i113 1
+R5
 R6
-R7
 nfour_to_one_@m@u@x
 vhazard_detection_unit
 R0
-R10
+R9
 !i10b 1
 !s100 CJRX3`HD9ZCzeQT6A54Z?3
 R1
@@ -182,12 +182,12 @@ R4
 r1
 !s85 0
 31
-R11
+R10
 !s107 D:/Senior_Project/MIPS/hazard_detection_unit.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/hazard_detection_unit.sv|
 !i113 1
+R5
 R6
-R7
 vinstruction_mem
 R0
 !s110 1650247606
@@ -211,11 +211,11 @@ r1
 !s107 D:/Senior_Project/MIPS/instructions.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/instructions.sv|
 !i113 1
+R5
 R6
-R7
 vMIPS
 R0
-Z12 !s110 1650243836
+Z11 !s110 1650243836
 !i10b 1
 !s100 ec6U99?jl2cF9mFGEe8z_0
 R1
@@ -223,7 +223,7 @@ IeYo7SlEP4A_6I8[EQPm8g3
 R2
 S1
 R3
-Z13 w1646868638
+Z12 w1646868638
 8D:/Senior_Project/MIPS/MIPS_top.sv
 FD:/Senior_Project/MIPS/MIPS_top.sv
 !i122 9
@@ -232,16 +232,16 @@ R4
 r1
 !s85 0
 31
-Z14 !s108 1650243836.000000
+Z13 !s108 1650243836.000000
 !s107 D:/Senior_Project/MIPS/MIPS_top.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/MIPS_top.sv|
 !i113 1
+R5
 R6
-R7
 n@m@i@p@s
 vMIPS_Pipelined
 R0
-R12
+R11
 !i10b 1
 !s100 F[KQXE:mPLYJX937l>_HE1
 R1
@@ -258,16 +258,16 @@ R4
 r1
 !s85 0
 31
-R14
+R13
 !s107 D:/Senior_Project/MIPS/MIPS_Pipelined.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/MIPS_Pipelined.sv|
 !i113 1
+R5
 R6
-R7
 n@m@i@p@s_@pipelined
 vpipeline_reg
 R0
-Z15 !s110 1650243837
+Z14 !s110 1650243837
 !i10b 1
 !s100 P[LDb9T5<diTV@edB5U@P2
 R1
@@ -284,15 +284,15 @@ R4
 r1
 !s85 0
 31
-R14
+R13
 !s107 D:/Senior_Project/MIPS/pipeline_reg.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/pipeline_reg.sv|
 !i113 1
+R5
 R6
-R7
 vregister_mem
 R0
-R15
+R14
 !i10b 1
 !s100 WCH0U>0VRWCcGf^<NBjZ_0
 R1
@@ -309,15 +309,15 @@ R4
 r1
 !s85 0
 31
-Z16 !s108 1650243837.000000
+Z15 !s108 1650243837.000000
 !s107 D:/Senior_Project/MIPS/registers.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/registers.sv|
 !i113 1
+R5
 R6
-R7
 vtb_ALUControl
 R0
-R15
+R14
 !i10b 1
 !s100 GW1H22F>EC^zH2eI3JETk1
 R1
@@ -325,7 +325,7 @@ IRg22k[k3kCzQT>Cg7I?oo2
 R2
 S1
 R3
-Z17 w1645465420
+w1645465420
 8D:/Senior_Project/MIPS/tb_ALUControl.sv
 FD:/Senior_Project/MIPS/tb_ALUControl.sv
 !i122 13
@@ -334,16 +334,16 @@ R4
 r1
 !s85 0
 31
-R16
+R15
 !s107 D:/Senior_Project/MIPS/tb_ALUControl.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/tb_ALUControl.sv|
 !i113 1
+R5
 R6
-R7
 ntb_@a@l@u@control
 vtb_control
 R0
-R15
+R14
 !i10b 1
 !s100 7VMhnJMa?[IE5eTcic:Y:3
 R1
@@ -351,7 +351,7 @@ IK`WBUKh`fE7gBXmADEZ0C0
 R2
 S1
 R3
-R13
+R12
 8D:/Senior_Project/MIPS/tb_control.sv
 FD:/Senior_Project/MIPS/tb_control.sv
 !i122 14
@@ -360,15 +360,15 @@ R4
 r1
 !s85 0
 31
-R16
+R15
 !s107 D:/Senior_Project/MIPS/tb_control.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/tb_control.sv|
 !i113 1
+R5
 R6
-R7
 vtb_dataMemory
 R0
-Z18 !s110 1650243838
+Z16 !s110 1650243838
 !i10b 1
 !s100 j9K7Jm@5B>F?J5UK3@BcD0
 R1
@@ -376,7 +376,7 @@ If3M7CPX6DEg1oU>5nRe6A0
 R2
 S1
 R3
-Z19 w1645465422
+Z17 w1645465422
 8D:/Senior_Project/MIPS/tb_dataMemory.sv
 FD:/Senior_Project/MIPS/tb_dataMemory.sv
 !i122 15
@@ -385,16 +385,16 @@ R4
 r1
 !s85 0
 31
-Z20 !s108 1650243838.000000
+Z18 !s108 1650243838.000000
 !s107 D:/Senior_Project/MIPS/tb_dataMemory.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/tb_dataMemory.sv|
 !i113 1
+R5
 R6
-R7
 ntb_data@memory
 vtb_instructions
 R0
-R18
+R16
 !i10b 1
 !s100 HLN>gmBIOJjbYzU_d4QS90
 R1
@@ -402,7 +402,7 @@ I3Jzd_f7FGRIaZ`YZA9enB1
 R2
 S1
 R3
-R19
+R17
 8D:/Senior_Project/MIPS/tb_instructions.sv
 FD:/Senior_Project/MIPS/tb_instructions.sv
 !i122 16
@@ -411,12 +411,12 @@ R4
 r1
 !s85 0
 31
-R20
+R18
 !s107 D:/Senior_Project/MIPS/tb_instructions.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/tb_instructions.sv|
 !i113 1
+R5
 R6
-R7
 vtb_MIPS
 R0
 !s110 1650247902
@@ -440,34 +440,34 @@ r1
 !s107 D:/Senior_Project/MIPS/tb_MIPS.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/tb_MIPS.sv|
 !i113 1
+R5
 R6
-R7
 ntb_@m@i@p@s
 vtb_MIPSALU
 R0
-R15
+!s110 1650416437
 !i10b 1
-!s100 8MLDKLK>1k1@jGNloTGF@2
+!s100 PQeCHUZZi_`RzS1?Y2>8f2
 R1
-I:LUV[NK]RfSC:ka9]KLNd1
+IKY_YoJKdF;jK>80j`:UQ`3
 R2
 S1
 R3
-R17
+w1650416432
 8D:/Senior_Project/MIPS/tb_ALU.sv
 FD:/Senior_Project/MIPS/tb_ALU.sv
-!i122 12
+!i122 32
 L0 8 22
 R4
 r1
 !s85 0
 31
-R16
+!s108 1650416437.000000
 !s107 D:/Senior_Project/MIPS/tb_ALU.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/tb_ALU.sv|
 !i113 1
+R5
 R6
-R7
 ntb_@m@i@p@s@a@l@u
 vtb_registers
 R0
@@ -479,7 +479,7 @@ I5nUM73g4k?<?76gR=kcXb1
 R2
 S1
 R3
-R13
+R12
 8D:/Senior_Project/MIPS/tb_registers.sv
 FD:/Senior_Project/MIPS/tb_registers.sv
 !i122 18
@@ -492,5 +492,5 @@ r1
 !s107 D:/Senior_Project/MIPS/tb_registers.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/Senior_Project/MIPS/tb_registers.sv|
 !i113 1
+R5
 R6
-R7

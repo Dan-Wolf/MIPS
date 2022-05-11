@@ -5,19 +5,26 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	hazard_detection_unit
 
-} {} {}} D:/Senior_Project/MIPS/MIPS_Pipelined.sv {1 {vlog -work work -sv -stats=none D:/Senior_Project/MIPS/MIPS_Pipelined.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module MIPS_Pipelined
-
-Top level modules:
-	MIPS_Pipelined
-
 } {} {}} D:/Senior_Project/MIPS/ALU.sv {1 {vlog -work work -sv -stats=none D:/Senior_Project/MIPS/ALU.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module ALU
 
 Top level modules:
 	ALU
+
+} {} {}} D:/Senior_Project/MIPS/forwarding_unit.sv {1 {vlog -work work -sv -stats=none D:/Senior_Project/MIPS/forwarding_unit.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module forwarding_unit
+
+Top level modules:
+	forwarding_unit
+
+} {} {}} D:/Senior_Project/MIPS/MIPS_Pipelined.sv {1 {vlog -work work -sv -stats=none D:/Senior_Project/MIPS/MIPS_Pipelined.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module MIPS_Pipelined
+
+Top level modules:
+	MIPS_Pipelined
 
 } {} {}} D:/Senior_Project/MIPS/tb_MIPS.sv {1 {vlog -work work -sv -stats=none D:/Senior_Project/MIPS/tb_MIPS.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -75,19 +82,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	tb_instructions
 
-} {} {}} D:/Senior_Project/MIPS/pipeline_reg.sv {1 {vlog -work work -sv -stats=none D:/Senior_Project/MIPS/pipeline_reg.sv
+} {} {}} D:/Senior_Project/MIPS/ALUControl.sv {1 {vlog -work work -sv -stats=none D:/Senior_Project/MIPS/ALUControl.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module pipeline_reg
+-- Compiling module ALUControl
 
 Top level modules:
-	pipeline_reg
-
-} {} {}} D:/Senior_Project/MIPS/MIPS_top.sv {1 {vlog -work work -sv -stats=none D:/Senior_Project/MIPS/MIPS_top.sv
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module MIPS
-
-Top level modules:
-	MIPS
+	ALUControl
 
 } {} {}} D:/Senior_Project/MIPS/dataMemory.sv {1 {vlog -work work -sv -stats=none D:/Senior_Project/MIPS/dataMemory.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -96,19 +96,19 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	dataMemory
 
-} {} {}} D:/Senior_Project/MIPS/ALUControl.sv {1 {vlog -work work -sv -stats=none D:/Senior_Project/MIPS/ALUControl.sv
+} {} {}} D:/Senior_Project/MIPS/MIPS_top.sv {1 {vlog -work work -sv -stats=none D:/Senior_Project/MIPS/MIPS_top.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module ALUControl
+-- Compiling module MIPS
 
 Top level modules:
-	ALUControl
+	MIPS
 
-} {} {}} D:/Senior_Project/MIPS/instructions.sv {1 {vlog -work work -sv -stats=none D:/Senior_Project/MIPS/instructions.sv
+} {} {}} D:/Senior_Project/MIPS/pipeline_reg.sv {1 {vlog -work work -sv -stats=none D:/Senior_Project/MIPS/pipeline_reg.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module instruction_mem
+-- Compiling module pipeline_reg
 
 Top level modules:
-	instruction_mem
+	pipeline_reg
 
 } {} {}} D:/Senior_Project/MIPS/tb_registers.sv {1 {vlog -work work -sv -stats=none D:/Senior_Project/MIPS/tb_registers.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -116,6 +116,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 
 Top level modules:
 	tb_registers
+
+} {} {}} D:/Senior_Project/MIPS/instructions.sv {1 {vlog -work work -sv -stats=none D:/Senior_Project/MIPS/instructions.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module instruction_mem
+
+Top level modules:
+	instruction_mem
 
 } {} {}} D:/Senior_Project/MIPS/tb_control.sv {1 {vlog -work work -sv -stats=none D:/Senior_Project/MIPS/tb_control.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
